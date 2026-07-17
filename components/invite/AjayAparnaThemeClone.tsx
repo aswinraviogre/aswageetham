@@ -1506,16 +1506,16 @@ ${window.location.href}`;
 
             {/* Parents details */}
             <div className="parents-grid">
-              <div className="parents-group groom-parents">
-                <h3>Groom's Parents</h3>
-                <p className="parent-name">Mr. Sivan</p>
-                <p className="parent-name">& Mrs. Sathi</p>
-              </div>
-              <div className="parents-separator"></div>
               <div className="parents-group bride-parents">
                 <h3>Bride's Parents</h3>
                 <p className="parent-name">Mr. Baiju</p>
                 <p className="parent-name">& Mrs. Sunitha</p>
+              </div>
+              <div className="parents-separator"></div>
+              <div className="parents-group groom-parents">
+                <h3>Groom's Parents</h3>
+                <p className="parent-name">Mr. Sivan</p>
+                <p className="parent-name">& Mrs. Sathi</p>
               </div>
             </div>
           </section>
