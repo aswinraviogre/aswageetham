@@ -8,6 +8,7 @@ export type InviteData = {
   phone: string;
   theme?: string;
   ogImage?: string;
+  ogDescription?: string;
 };
 
 export const invites: InviteData[] = [
@@ -73,5 +74,6 @@ export const invites: InviteData[] = [
     theme: "ajay-aparna",
     images: [],
     ogImage: "/couple_traditional.jpg",
+    ogDescription: "👋 Hello!\n\n❤️ You're warmly invited to celebrate our special day.\n\nTap the link below to view our digital invitation.\n\n⬇️",
   },
 ];

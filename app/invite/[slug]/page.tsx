@@ -19,12 +19,14 @@ export async function generateMetadata({ params }: InvitePageProps) {
 
   if (!invite) return {};
 
+  const defaultDesc = `You are cordially invited to the wedding of ${invite.couple} on ${invite.date}.`;
+
   return {
     title: `Wedding Invitation | ${invite.couple}`,
-    description: `You are cordially invited to the wedding of ${invite.couple} on ${invite.date}.`,
+    description: invite.ogDescription || defaultDesc,
     openGraph: {
       title: `${invite.couple} - Save The Date`,
-      description: `You are cordially invited to the wedding of ${invite.couple} on ${invite.date}.`,
+      description: invite.ogDescription || defaultDesc,
       images: [
         {
           url: invite.ogImage || "/SAVE.png",
