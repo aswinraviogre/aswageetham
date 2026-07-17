@@ -186,7 +186,14 @@ export function AjayAparnaThemeClone({ invite }: { invite: InviteData }) {
   // 6. WhatsApp Share Button handler
   const handleWhatsappShare = (e: React.MouseEvent) => {
     e.preventDefault();
-    const shareMessage = `Together with our families, we cordially invite you to celebrate our special day on Thursday, August 20, 2026. View our interactive wedding invitation card here: ${window.location.href}`;
+    const shareMessage = `👋 Hello!
+
+❤️ You're warmly invited to celebrate our special day.
+
+Tap the link below to view our digital invitation.
+
+⬇️
+${window.location.href}`;
     const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareMessage)}`;
     window.open(whatsappUrl, "_blank");
   };
