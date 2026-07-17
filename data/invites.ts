@@ -72,5 +72,6 @@ export const invites: InviteData[] = [
     phone: "918848772371",
     theme: "ajay-aparna",
     images: [],
+    ogImage: "/couple_traditional.jpg",
   },
 ];
