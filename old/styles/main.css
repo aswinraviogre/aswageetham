@@ -1,0 +1,292 @@
+/* styles/main.css */
+
+/* Global Reset & Base Setup */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Premium Harmonious Color Palette */
+  --bg-warm-cream: #FAF6F0;
+  --bg-deep-cream: #F4ECE1;
+  --bg-light-gold: #E6D5B8;
+  --gold-primary: #C5A880;
+  --gold-dark: #A88656;
+  --gold-light: #F0E6D2;
+  --text-dark: #2C2520;
+  --text-muted: #6E6259;
+  --accent-maroon: #802A2A;
+  --accent-green: #2E5A44;
+  --white: #FFFFFF;
+  --shadow-sm: 0 4px 6px rgba(44, 37, 32, 0.05);
+  --shadow-md: 0 8px 16px rgba(44, 37, 32, 0.08);
+  --shadow-lg: 0 16px 32px rgba(44, 37, 32, 0.12);
+  --shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+
+  /* Typography */
+  --font-serif-header: 'Cinzel', serif;
+  --font-serif-decorative: 'Cinzel Decorative', serif;
+  --font-serif-body: 'Playfair Display', serif;
+  --font-sans: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--bg-warm-cream);
+  color: var(--text-dark);
+}
+
+body {
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  line-height: 1.6;
+}
+
+/* Page Lock (for envelope interaction) */
+body.is-locked {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* App Layout Container */
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Custom Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-warm-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-dark);
+}
+
+/* Floating Music Player */
+.music-player {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-toggle-btn {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--gold-primary);
+  color: var(--text-dark);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation: pulse-music 3s infinite alternate;
+}
+
+.music-toggle-btn:hover {
+  transform: scale(1.1);
+  background: var(--white);
+  color: var(--accent-maroon);
+  box-shadow: var(--shadow-lg);
+}
+
+@keyframes pulse-music {
+  0% {
+    box-shadow: 0 0 0 0 rgba(197, 168, 128, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(197, 168, 128, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(197, 168, 128, 0);
+  }
+}
+
+/* Floating WhatsApp Share Button */
+.floating-share {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.share-toggle-btn {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--gold-primary);
+  color: var(--text-dark);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.share-toggle-btn i {
+  color: #25D366; /* WhatsApp Brand Green */
+  transition: transform 0.3s ease;
+}
+
+.share-toggle-btn:hover {
+  transform: scale(1.1);
+  background: var(--white);
+  box-shadow: var(--shadow-lg);
+}
+
+.share-toggle-btn:hover i {
+  transform: scale(1.15) rotate(8deg);
+  color: var(--accent-maroon);
+}
+
+/* Scroll-triggered Reveal Animations */
+.reveal {
+  opacity: 0;
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.reveal-up {
+  transform: translateY(50px);
+}
+
+.reveal-down {
+  transform: translateY(-50px);
+}
+
+.reveal-left {
+  transform: translateX(-50px);
+}
+
+.reveal-right {
+  transform: translateX(50px);
+}
+
+.reveal-zoom {
+  transform: scale(0.9);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translate(0) scale(1);
+}
+
+/* Stagger delay classes for child elements */
+.delay-1 { transition-delay: 0.15s; }
+.delay-2 { transition-delay: 0.3s; }
+.delay-3 { transition-delay: 0.45s; }
+.delay-4 { transition-delay: 0.6s; }
+
+/* Falling Petals Background Effect */
+.petals-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 99;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.wedding-card.is-visible .petals-container {
+  opacity: 1;
+}
+
+.petal {
+  position: absolute;
+  pointer-events: none;
+  animation: fall linear infinite;
+  will-change: transform, opacity;
+}
+
+/* Rose Petal Style */
+.petal.rose {
+  background: radial-gradient(circle at 35% 35%, #ff9ebb, #e05e83 70%, #b82b54);
+  border-radius: 50% 0 50% 50%;
+  box-shadow: 0 2px 5px rgba(184, 43, 84, 0.2);
+}
+
+/* Jasmine Petal Style (Traditional Kerala Wedding Theme) */
+.petal.jasmine {
+  background: radial-gradient(circle at 35% 35%, #ffffff, #fefdf6 60%, #fae69e);
+  border-radius: 40% 60% 40% 60% / 50% 50% 50% 50%;
+  box-shadow: 0 1px 3px rgba(197, 168, 128, 0.15);
+}
+
+@keyframes fall {
+  0% {
+    transform: translate3d(0, -50px, 0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.85;
+  }
+  90% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate3d(120px, calc(100vh + 50px), 0) rotate(480deg);
+    opacity: 0;
+  }
+}
+
+/* Base ornament utility styles */
+.ornament-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  color: var(--gold-primary);
+  font-size: 1.2rem;
+  position: relative;
+  width: 100%;
+}
+
+.ornament-divider::before,
+.ornament-divider::after {
+  content: '';
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold-primary), transparent);
+  flex-grow: 1;
+  margin: 0 15px;
+}

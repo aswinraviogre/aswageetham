@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Wedding Invitation: Together with their families, Ajay and Aparna cordially invite you to celebrate their special day on August 20, 2026, in Pulpally, Kerala.">
+
+  <!-- Open Graph / Facebook Meta Tags for WhatsApp Share Previews -->
+  <meta property="og:title" content="The Wedding Invitation of Ajay & Aparna" />
+  <meta property="og:description"
+    content="Together with our families, we cordially invite you to celebrate our special day on Thursday, August 20, 2026, in Pulpally, Kerala." />
+  <meta property="og:image"
+    content="https://save-the-date.in/ajay-and-aparna-wedding-invitation/assets/thumbnail/couple_casual.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="960" />
+  <meta property="og:url" content="https://save-the-date.in/ajay-and-aparna-wedding-invitation/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Wedding Invitation of Ajay & Aparna" />
+  <meta name="twitter:description"
+    content="Join us in celebrating our special day on Thursday, August 20, 2026, in Pulpally, Kerala." />
+  <meta name="twitter:image"
+    content="https://save-the-date.in/ajay-and-aparna-wedding-invitation/assets/thumbnail/couple_casual.jpg" />
+
+  <title>The Wedding Invitation of Ajay & Aparna</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/envelope.css">
+  <link rel="stylesheet" href="styles/card.css">
+</head>
+
+<body class="is-locked">
+
+  <!-- Background Music -->
+  <div class="music-player" id="musicPlayer">
+    <audio id="bgMusic" loop
+      src="assets/music/vidssavecom-mangalyam-official-audio-wedding-song-arun-pradeep-feat-sand_MaLJU9Oi.aac"></audio>
+    <button class="music-toggle-btn" aria-label="Toggle Background Music">
+      <i class="fas fa-volume-mute" id="musicIcon"></i>
+    </button>
+  </div>
+
+  <!-- Floating WhatsApp Share Button -->
+  <div class="floating-share" id="floatingShare">
+    <button class="share-toggle-btn" id="shareWhatsappBtn" aria-label="Share Invitation on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </button>
+  </div>
+
+  <!-- Main Container -->
+  <div class="app-container">
+
+    <!-- Section 1: The Interactive 3D Envelope -->
+    <div class="envelope-wrapper" id="envelopeWrapper">
+      <div class="envelope" id="envelope">
+        <div class="envelope-flap top-flap"></div>
+        <div class="envelope-flap left-flap"></div>
+        <div class="envelope-flap right-flap"></div>
+        <div class="envelope-flap bottom-flap"></div>
+
+        <!-- The Card Peeking / Inside Envelope -->
+        <div class="envelope-card-preview">
+          <div class="preview-initials">A & A</div>
+          <div class="preview-text">Save the Date</div>
+        </div>
+
+        <!-- Gold Wax Seal -->
+        <div class="wax-seal" id="waxSeal">
+          <div class="seal-inner">
+            <span class="seal-monogram">A&A</span>
+          </div>
+        </div>
+      </div>
+      <div class="envelope-hint">Click the Wax Seal to Open</div>
+    </div>
+
+    <!-- Section 2: The Main Wedding Card -->
+    <main class="wedding-card" id="weddingCard">
+      <!-- Falling Petals Background -->
+      <div class="petals-container" id="petalsContainer"></div>
+
+      <!-- Right Side Column Decoration (Kerala Elements) -->
+      <div class="card-side-art">
+        <div class="art-overlay"></div>
+        <img src="assets/kerala_wedding_bg.png" alt="Kerala Traditional Wedding Pillar, Vilakku and Jasmine Garlands"
+          class="side-art-img">
+      </div>
+
+      <!-- Left Side Scrollable Content -->
+      <div class="card-content-scroll">
+        <!-- Scroll Faders for Feathered Edges -->
+        <div class="scroll-fader scroll-fader-top"></div>
+        <div class="scroll-fader scroll-fader-bottom"></div>
+
+        <!-- Hero / Cover Section -->
+        <section class="hero-section" id="hero">
+          <div class="initials-logo">A & A</div>
+          <h1 class="invitation-heading">The Wedding Invitation of</h1>
+          <div class="couple-names">
+            <span class="name">Ajay</span>
+            <span class="and">&</span>
+            <span class="name">Aparna</span>
+          </div>
+          <!-- Couple Casual Portrait -->
+          <div class="couple-portrait-wrapper reveal reveal-zoom delay-1">
+            <img src="assets/couple_traditional.jpg" alt="Ajay and Aparna Casual Portrait" class="couple-portrait">
+          </div>
+          <div class="hero-details">
+            <p class="hero-date">August 20, 2026</p>
+            <p class="hero-location">Pulpally, Kerala</p>
+          </div>
+          <div class="scroll-indicator">
+            <span class="scroll-text">Scroll to Begin</span>
+            <i class="fas fa-chevron-down scroll-arrow"></i>
+          </div>
+        </section>
+
+        <!-- Invitation details section -->
+        <section class="invitation-message-section" id="message">
+          <div class="ornament-divider reveal reveal-zoom"><i class="fas fa-feather-pointed"></i></div>
+          <p class="invitation-text reveal reveal-up delay-1">
+            Together with our families, we cordially invite you to celebrate our special day. As we unite our lives in
+            sacred matrimony under the blessings of God, your presence and prayers will bring us immense joy.
+          </p>
+
+          <!-- Couple Traditional Portrait -->
+          <div class="couple-portrait-wrapper reveal reveal-zoom delay-2">
+            <img src="assets/couple_casual.jpg" alt="Ajay and Aparna Traditional Portrait" class="couple-portrait">
+          </div>
+
+          <!-- Parents details -->
+          <div class="parents-grid">
+            <div class="parents-group groom-parents reveal reveal-left delay-2">
+              <h3>Groom's Parents</h3>
+              <p class="parent-name">Mr. Sivan</p>
+              <p class="parent-name">& Mrs. Sathi</p>
+            </div>
+            <div class="parents-separator reveal reveal-zoom delay-3"></div>
+            <div class="parents-group bride-parents reveal reveal-right delay-2">
+              <h3>Bride's Parents</h3>
+              <p class="parent-name">Mr. Baiju</p>
+              <p class="parent-name">& Mrs. Sunitha</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Events Section (Muhurtham & Reception) -->
+        <section class="events-section" id="events">
+          <h2 class="section-title reveal reveal-up">Wedding Events</h2>
+
+          <div class="events-grid">
+            <!-- Event 1: Muhurtham -->
+            <div class="event-card muhurtham-card reveal reveal-left delay-1">
+              <div class="event-badge">Ceremony</div>
+              <h3 class="event-name">Marriage Ceremony (Muhurtham)</h3>
+
+              <div class="event-details-list">
+                <div class="event-detail-item">
+                  <i class="far fa-calendar-alt"></i>
+                  <span>20 August 2026, Thursday</span>
+                </div>
+                <div class="event-detail-item">
+                  <i class="far fa-clock"></i>
+                  <span>12:15 PM (Muhurtham)</span>
+                </div>
+                <div class="event-detail-item">
+                  <i class="fas fa-gopuram"></i>
+                  <span>Seethadevi Temple</span>
+                </div>
+                <div class="event-detail-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Pulpally, Wayanad</span>
+                </div>
+              </div>
+
+              <a href="https://maps.app.goo.gl/zVybRk1idCd1vcyV6" target="_blank" rel="noopener noreferrer"
+                class="map-btn">
+                <span>📍 See on Map</span>
+              </a>
+            </div>
+
+            <!-- Event 2: Reception -->
+            <div class="event-card reception-card reveal reveal-right delay-2">
+              <div class="event-badge">Celebration</div>
+              <h3 class="event-name">Wedding Reception</h3>
+
+              <div class="event-details-list">
+                <div class="event-detail-item">
+                  <i class="far fa-calendar-alt"></i>
+                  <span>20 August 2026, Thursday</span>
+                </div>
+                <div class="event-detail-item">
+                  <i class="far fa-clock"></i>
+                  <span>12:00 PM Onwards</span>
+                </div>
+                <div class="event-detail-item">
+                  <i class="fas fa-church"></i>
+                  <span>St. Joseph Church Auditorium</span>
+                </div>
+                <div class="event-detail-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Marakavu, Pulpally</span>
+                </div>
+              </div>
+
+              <a href="https://maps.app.goo.gl/XA1ZpSrckFxbfivs6" target="_blank" rel="noopener noreferrer"
+                class="map-btn">
+                <span>📍 See on Map</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Live Countdown Section -->
+        <section class="countdown-section" id="countdown">
+          <h2 class="section-title reveal reveal-up">Time Until Muhurtham</h2>
+
+          <div class="countdown-timer" id="timer">
+            <div class="countdown-item reveal reveal-zoom delay-1">
+              <span class="number" id="days">00</span>
+              <span class="label">Days</span>
+            </div>
+            <div class="countdown-item reveal reveal-zoom delay-2">
+              <span class="number" id="hours">00</span>
+              <span class="label">Hours</span>
+            </div>
+            <div class="countdown-item reveal reveal-zoom delay-3">
+              <span class="number" id="minutes">00</span>
+              <span class="label">Minutes</span>
+            </div>
+            <div class="countdown-item reveal reveal-zoom delay-4">
+              <span class="number" id="seconds">00</span>
+              <span class="label">Seconds</span>
+            </div>
+          </div>
+
+        </section>
+
+        <footer class="invitation-footer">
+          <p>CREATE YOUR BEAUTIFUL INVITE LINK</p>
+          <a href="https://save-the-date.in/" target="_blank" rel="noopener noreferrer" class="footer-link">Click
+            Now</a>
+          <p>© aswinraviogre.</p>
+        </footer>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Custom Scripts -->
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
