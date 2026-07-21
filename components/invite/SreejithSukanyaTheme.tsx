@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
 import type { InviteData } from "@/data/invites";
 
@@ -1956,14 +1955,7 @@ ${window.location.href}`;
         }
       `}</style>
 
-      {/* Floating Exit Link */}
-      <Link
-        href="/"
-        className="fixed top-4 left-4 z-50 bg-[#500a12]/85 backdrop-blur-md text-[#FAF6F0] px-4 py-2 rounded-full flex items-center gap-2 hover:bg-[#500a12] transition-colors border border-[#c5a880]/30 text-sm font-semibold shadow-md"
-      >
-        <span className="material-symbols-outlined text-[18px]">arrow_back</span>
-        Exit Design
-      </Link>
+
 
       {/* Top Background Music Control */}
       <div className="music-player">
