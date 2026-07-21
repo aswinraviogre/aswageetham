@@ -1622,7 +1622,7 @@ ${window.location.href}`;
           <footer className="invitation-footer">
             <p>CREATE YOUR BEAUTIFUL INVITE LINK</p>
             <a
-              href="https://save-the-date.in/"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className="footer-link"
