@@ -2353,7 +2353,7 @@ ${window.location.href}`;
                 <div className="event-details-list">
                   <div className="event-detail-item">
                     <i className="far fa-calendar-alt"></i>
-                    <span>01 September 2026, Tuesday</span>
+                    <span>30 August 2026, Sunday</span>
                   </div>
                   <div className="event-detail-item">
                     <i className="far fa-clock"></i>

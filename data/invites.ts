@@ -79,7 +79,7 @@ export const invites: InviteData[] = [
   {
     slug: "sreejith-sukanya-wedding-digital-invitation",
     couple: "Sukanya & Sreejith",
-    date: "September 01, 2026",
+    date: "August 30, 2026",
     venue: "Sree Krishna Temple, Guruvayoor",
     phone: "9447951485",
     theme: "sreejith-sukanya",
