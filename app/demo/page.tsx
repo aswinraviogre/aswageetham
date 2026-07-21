@@ -8,7 +8,7 @@ export default function DemoPage() {
       couple: "Anandhu & Archana",
       slug: "anandhu-archana-kerala-wedding",
       desc: "Rich gold and green traditional theme featuring falling petals, video reels, and traditional music.",
-      image: "/couple_traditional.jpg",
+      image: "/kerala_couple_1_1777897655779.png",
       bgClass: "border-emerald-500/20 bg-[#0c1813]/95",
       tagColor: "bg-emerald-500/20 text-emerald-300 border border-emerald-500/20"
     },
