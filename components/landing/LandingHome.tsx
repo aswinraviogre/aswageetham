@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { invites } from "@/data/invites";
 import { motion } from "framer-motion";
 import { CardStack } from "@/components/ui/card-stack";
@@ -206,55 +206,8 @@ export function LandingHome() {
   const demoPath = `/invite/${primary.slug}`;
   const whatsappUrl = `https://wa.me/${primary.phone}`;
 
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
-    audio.volume = 0.4;
-
-    const startAudio = () => {
-      audio.play().then(() => {
-        setIsPlaying(true);
-        window.removeEventListener("click", startAudio);
-        window.removeEventListener("touchstart", startAudio);
-        window.removeEventListener("scroll", startAudio);
-      }).catch(() => {});
-    };
-
-    audio.play().then(() => setIsPlaying(true)).catch(() => {
-      window.addEventListener("click", startAudio);
-      window.addEventListener("touchstart", startAudio);
-      window.addEventListener("scroll", startAudio);
-    });
-
-    return () => {
-      window.removeEventListener("click", startAudio);
-      window.removeEventListener("touchstart", startAudio);
-      window.removeEventListener("scroll", startAudio);
-    };
-  }, []);
-
-  const toggleMusic = () => {
-    if (!audioRef.current) return;
-    if (isPlaying) {
-      audioRef.current.pause();
-    } else {
-      audioRef.current.play();
-    }
-    setIsPlaying(!isPlaying);
-  };
-
   return (
     <>
-      <audio ref={audioRef} src="/music/sia%20music.mp3" loop preload="auto" />
-      <button
-        onClick={toggleMusic}
-        className="fixed bottom-8 left-8 z-50 w-12 h-12 bg-white/20 border border-white/30 rounded-full flex items-center justify-center shadow-md text-white hover:scale-105 transition-transform backdrop-blur-sm"
-      >
-        <span className="material-symbols-outlined">{isPlaying ? "volume_up" : "volume_off"}</span>
-      </button>
 
       {/* ── HEADER ── */}
       <Header whatsappUrl={whatsappUrl} />
