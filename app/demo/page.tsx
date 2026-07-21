@@ -38,6 +38,15 @@ export default function DemoPage() {
       image: "/couple_casual.jpg",
       bgClass: "border-amber-500/20 bg-[#181107]/95",
       tagColor: "bg-amber-500/20 text-amber-300 border border-amber-500/20"
+    },
+    {
+      title: "Sreejith & Sukanya Traditional",
+      couple: "Sukanya & Sreejith",
+      slug: "sreejith-sukanya-wedding-digital-invitation",
+      desc: "Interactive 3D envelope, gold wax seal, Kerala traditional background audio, addresses, and contacts.",
+      image: "/sukanya_sreejith_couple_1.jpg",
+      bgClass: "border-yellow-500/20 bg-[#181507]/95",
+      tagColor: "bg-yellow-500/20 text-yellow-300 border border-yellow-500/20"
     }
   ];
 

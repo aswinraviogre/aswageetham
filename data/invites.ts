@@ -76,4 +76,20 @@ export const invites: InviteData[] = [
     ogImage: "/couple_traditional.jpg",
     ogDescription: "👋 Hello!\n\n❤️ You're warmly invited to celebrate our special day.\n\nTap the link below to view our digital invitation.\n\n⬇️",
   },
+  {
+    slug: "sreejith-sukanya-wedding-digital-invitation",
+    couple: "Sukanya & Sreejith",
+    date: "September 01, 2026",
+    venue: "Sree Krishna Temple, Guruvayoor",
+    phone: "9447951485",
+    theme: "sreejith-sukanya",
+    images: [
+      "/sukanya_sreejith_couple_1.jpg",
+      "/sukanya_sreejith_bride.jpg",
+      "/sukanya_sreejith_couple_bw.jpg"
+    ],
+    ogImage: "/sukanya_sreejith_couple_1.jpg",
+    ogDescription: "👋 Hello!\n\n❤️ You're warmly invited to celebrate our special day.\n\nTap the link below to view our digital invitation.\n\n⬇️",
+  },
 ];
+

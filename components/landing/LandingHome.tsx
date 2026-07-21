@@ -49,6 +49,7 @@ const TEMPLATES = [
   { title: "Christian Elegance", slug: "daniel-maria-wedding", desc: "Minimalist heavenly blue and white aesthetic with gentle scroll animations.", gradient: "from-sky-100 via-sky-50 to-white", textCol: "text-sky-800", subtitleCol: "text-sky-600" },
   { title: "Royal Palace", slug: "aditya-meera-royal-wedding", desc: "Deep maroon and gold luxury layout with sparkling particle animations.", gradient: "from-[#6b0504] via-[#8d0801] to-[#6b0504]", textCol: "text-amber-200", subtitleCol: "text-amber-400" },
   { title: "Ajay & Aparna Traditional", slug: "ajay-aparna-wedding-digital-invitation", desc: "Interactive 3D envelope opening, gold wax seal, falling petals, and traditional background music.", gradient: "from-[#1b4332] via-[#2d6a4f] to-[#1b4332]", textCol: "text-[#d4af37]", subtitleCol: "text-[#d4af37]/80" },
+  { title: "Sreejith & Sukanya Traditional", slug: "sreejith-sukanya-wedding-digital-invitation", desc: "Interactive 3D envelope, gold wax seal, falling petals, Kerala traditional background music, addresses, and contacts.", gradient: "from-[#603813] via-[#b29f7f] to-[#603813]", textCol: "text-[#FAF6F0]", subtitleCol: "text-[#FAF6F0]/80" },
 ];
 
 const FAQS = [
