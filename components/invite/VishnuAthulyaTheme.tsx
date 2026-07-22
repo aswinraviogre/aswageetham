@@ -585,6 +585,51 @@ ${window.location.href}`;
           clip-path: polygon(50% 0%, 82% 15%, 90% 35%, 90% 100%, 10% 100%, 10% 35%, 18% 15%);
           border-radius: 50% 50% 0 0 / 25% 25% 0 0;
         }
+
+        /* Music player and WhatsApp Share Buttons floating container */
+        .floating-share {
+          position: fixed;
+          bottom: 24px;
+          right: 24px;
+          z-index: 1000;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .share-toggle-btn {
+          background: rgba(255, 255, 255, 0.85);
+          border: 1px solid var(--color-gold-500);
+          color: #333333;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          cursor: pointer;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.3rem;
+          transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .share-toggle-btn i {
+          color: #25D366;
+          transition: transform 0.3s ease;
+        }
+
+        .share-toggle-btn:hover {
+          transform: scale(1.1);
+          background: #ffffff;
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .share-toggle-btn:hover i {
+          transform: scale(1.15) rotate(8deg);
+          color: var(--color-maroon-900);
+        }
       `}</style>
 
       {/* Desktop Ambient background */}
