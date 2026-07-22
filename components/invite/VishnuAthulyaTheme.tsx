@@ -1101,7 +1101,7 @@ ${window.location.href}`;
               </div>
 
               <div className="mt-4">
-                <a href="https://maps.app.goo.gl/Yve2dpq6A74tegEe7?g_st=ic" target="_blank" rel="noopener noreferrer" className="w-full py-2.5 px-4 bg-[#800020] text-[#D4AF37] font-serif font-bold text-xs rounded-xl flex items-center justify-center gap-2 hover:bg-[#5c0016] transition-all duration-300 shadow-md">
+                <a href="https://maps.app.goo.gl/zVybRk1idCd1vcyV6" target="_blank" rel="noopener noreferrer" className="w-full py-2.5 px-4 bg-[#800020] text-[#D4AF37] font-serif font-bold text-xs rounded-xl flex items-center justify-center gap-2 hover:bg-[#5c0016] transition-all duration-300 shadow-md">
                   <span>📍 SEE ON MAP</span>
                 </a>
               </div>
