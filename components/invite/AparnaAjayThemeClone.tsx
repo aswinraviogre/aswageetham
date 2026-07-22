@@ -14,7 +14,7 @@ interface Petal {
   rotation: number;
 }
 
-export function AjayAparnaThemeClone({ invite }: { invite: InviteData }) {
+export function AparnaAjayThemeClone({ invite }: { invite: InviteData }) {
   const [isEnvelopeOpened, setIsEnvelopeOpened] = useState(false);
   const [isEnvelopeHidden, setIsEnvelopeHidden] = useState(false);
   const [isCardVisible, setIsCardVisible] = useState(false);
@@ -60,12 +60,12 @@ export function AjayAparnaThemeClone({ invite }: { invite: InviteData }) {
   // Lock document scroll while envelope is closed
   useEffect(() => {
     if (!isEnvelopeOpened) {
-      document.documentElement.classList.add("ajay-aparna-locked");
+      document.documentElement.classList.add("aparna-ajay-locked");
     } else {
-      document.documentElement.classList.remove("ajay-aparna-locked");
+      document.documentElement.classList.remove("aparna-ajay-locked");
     }
     return () => {
-      document.documentElement.classList.remove("ajay-aparna-locked");
+      document.documentElement.classList.remove("aparna-ajay-locked");
     };
   }, [isEnvelopeOpened]);
 
@@ -206,7 +206,7 @@ ${window.location.href}`;
   }, []);
 
   return (
-    <div className="ajay-aparna-theme relative w-full min-h-screen">
+    <div className="aparna-ajay-theme relative w-full min-h-screen">
       {/* Stylesheet imports & Scoped custom CSS */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -217,13 +217,13 @@ ${window.location.href}`;
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
       <style>{`
-        html.ajay-aparna-locked, 
-        html.ajay-aparna-locked body {
+        html.aparna-ajay-locked, 
+        html.aparna-ajay-locked body {
           overflow: hidden !important;
           height: 100vh !important;
         }
 
-        .ajay-aparna-theme {
+        .aparna-ajay-theme {
           --bg-warm-cream: #FAF6F0;
           --bg-deep-cream: #F4ECE1;
           --bg-light-gold: #E6D5B8;
