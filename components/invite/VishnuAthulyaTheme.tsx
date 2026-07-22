@@ -1315,7 +1315,7 @@ ${window.location.href}`;
           <div className="h-[1px] w-24 bg-[#D4AF37]/30 mx-auto mb-6"></div>
 
           <p className="text-[9px] text-[#758771]/60 font-medium">
-            Designed with ♥ for Vishnu & Athulya
+            © aswinraviogre.
           </p>
         </footer>
 
@@ -1341,8 +1341,6 @@ ${window.location.href}`;
           </div>
         </div>
       )}
-
-      <p>© aswinraviogre.</p>
     </div>
   );
 }
