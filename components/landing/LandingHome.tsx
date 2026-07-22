@@ -70,6 +70,13 @@ const INVITE_CARDS = [
     imageSrc: "/sukanya_sreejith_couple_1.jpg",
     href: "/invite/sreejith-sukanya-wedding-digital-invitation",
   },
+  {
+    id: 6,
+    title: "Vishnu & Athulya",
+    description: "Vishnu & Athulya Kerala Premium: Multi-panel slide envelope, gold wax seal, interactive scratch details card, dynamic floating petals, snap carousel, local guestbook, and traditional music.",
+    imageSrc: "/vishnu_athulya/couple_close.jpg",
+    href: "/invite/vishnu-athulya-wedding-digital-invitation",
+  },
 ];
 
 const MOCKUP_IMAGE_SRC =
@@ -142,6 +149,18 @@ const TEMPLATES = [
     gradient: "from-[#603813] via-[#b29f7f] to-[#603813]", 
     textCol: "text-[#FAF6F0]", 
     subtitleCol: "text-[#FAF6F0]/80" 
+  },
+  { 
+    title: "Vishnu & Athulya Kerala Premium", 
+    couple: "Vishnu & Athulya",
+    slug: "vishnu-athulya-wedding-digital-invitation", 
+    desc: "Multi-panel slide envelope, gold wax seal, interactive scratch details card, dynamic floating petals, snap carousel, local guestbook, and traditional music.", 
+    image: "/vishnu_athulya/couple_close.jpg",
+    bgClass: "border-rose-500/20 bg-[#1f0008]/90",
+    tagColor: "bg-rose-500/20 text-rose-300 border border-rose-500/20",
+    gradient: "from-[#2b080c] via-[#800020] to-[#2b080c]", 
+    textCol: "text-[#faebb7]", 
+    subtitleCol: "text-[#faebb7]/80" 
   },
 ];
 

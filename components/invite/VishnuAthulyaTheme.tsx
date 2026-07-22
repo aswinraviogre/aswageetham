@@ -580,7 +580,7 @@ export function VishnuAthulyaTheme({ invite }: { invite: InviteData }) {
 
       {/* Background Music Player */}
       <audio id="bgMusic" ref={audioRef} loop preload="auto">
-        <source src="https://cdn.pixabay.com/audio/2022/05/27/audio_1808b26d8b.mp3" type="audio/mp3" />
+        <source src="/music/vidssavecom-mangalyam-official-audio-wedding-song-arun-pradeep-feat-sand_MaLJU9Oi.aac" type="audio/aac" />
       </audio>
 
       {/* Exit Button */}
@@ -1225,22 +1225,6 @@ export function VishnuAthulyaTheme({ invite }: { invite: InviteData }) {
           </div>
         </section>
 
-        {/* Background Music Player */}
-        <div className="music-player">
-          <audio
-            ref={audioRef}
-            src="/music/vidssavecom-mangalyam-official-audio-wedding-song-arun-pradeep-feat-sand_MaLJU9Oi.aac"
-            loop
-            preload="auto"
-          />
-          <button
-            onClick={toggleMusic}
-            className={`music-toggle-btn ${isMusicPlaying ? "playing" : ""}`}
-            aria-label="Toggle Background Music"
-          >
-            <i className={isMusicPlaying ? "fas fa-volume-up" : "fas fa-volume-mute"}></i>
-          </button>
-        </div>
 
 
         {/* ==========================================
