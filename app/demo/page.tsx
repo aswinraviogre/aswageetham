@@ -47,6 +47,15 @@ export default function DemoPage() {
       image: "/sukanya_sreejith_couple_1.jpg",
       bgClass: "border-yellow-500/20 bg-[#181507]/95",
       tagColor: "bg-yellow-500/20 text-yellow-300 border border-yellow-500/20"
+    },
+    {
+      title: "Vishnu & Athulya Kerala Premium",
+      couple: "Vishnu & Athulya",
+      slug: "vishnu-athulya-wedding-digital-invitation",
+      desc: "Multi-panel slide envelope, gold wax seal, interactive scratch details card, dynamic floating petals, snap carousel, local guestbook, and traditional music.",
+      image: "/vishnu_athulya/couple_close.jpg",
+      bgClass: "border-rose-500/20 bg-[#1f0008]/95",
+      tagColor: "bg-rose-500/20 text-rose-300 border border-rose-500/20"
     }
   ];
 

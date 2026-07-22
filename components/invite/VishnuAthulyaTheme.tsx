@@ -362,6 +362,20 @@ export function VishnuAthulyaTheme({ invite }: { invite: InviteData }) {
       requestAnimationFrame(stepShower);
     }
   };
+  // 6. WhatsApp Share Button handler
+  const handleWhatsappShare = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const shareMessage = `👋 Hello!
+
+❤️ You're warmly invited to celebrate our special day.
+
+Tap the link below to view our digital invitation.
+
+⬇️
+${window.location.href}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareMessage)}`;
+    window.open(whatsappUrl, "_blank");
+  };
 
   // 8. Event Carousel Scrolling Indicator
   const handleCarouselScroll = () => {
@@ -1218,6 +1232,20 @@ export function VishnuAthulyaTheme({ invite }: { invite: InviteData }) {
             </div>
           </div>
         </section>
+
+        {/* WhatsApp Share Floating Button (Only visible after card is opened) */}
+        {isOpenComplete && (
+          <div className="floating-share">
+            <button
+              onClick={handleWhatsappShare}
+              className="share-toggle-btn"
+              aria-label="Share Invitation on WhatsApp"
+            >
+              <i className="fab fa-whatsapp"></i>
+            </button>
+          </div>
+        )}
+
 
 
 

@@ -472,7 +472,7 @@ export function LandingHome() {
                   <div
                     key={t.slug}
                     className={`group relative flex flex-col rounded-2xl sm:rounded-3xl border border-white/10 bg-[#120a2a]/60 backdrop-blur-md overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:border-purple-500/30 ${
-                      idx === 4 ? "hidden lg:flex" : "flex"
+                      idx >= 4 ? "hidden lg:flex" : "flex"
                     }`}
                   >
                     {/* Image Preview Container */}
