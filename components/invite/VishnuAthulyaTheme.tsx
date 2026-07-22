@@ -444,6 +444,7 @@ ${window.location.href}`;
 
   return (
     <div className="vishnu-athulya-theme min-h-screen bg-[#120305] text-[#333333] font-sans antialiased flex justify-center items-center overflow-hidden w-full relative">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
       {/* Styles block representing CSS overrides */}
       <style>{`
