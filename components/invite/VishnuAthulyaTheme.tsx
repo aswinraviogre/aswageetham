@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
 import type { InviteData } from "@/data/invites";
 
@@ -583,11 +582,6 @@ export function VishnuAthulyaTheme({ invite }: { invite: InviteData }) {
         <source src="/music/vidssavecom-mangalyam-official-audio-wedding-song-arun-pradeep-feat-sand_MaLJU9Oi.aac" type="audio/aac" />
       </audio>
 
-      {/* Exit Button */}
-      <Link href="/" className="fixed top-4 left-4 z-50 bg-[#800020]/75 backdrop-blur-md text-[#faebb7] px-4 py-2 rounded-full flex items-center gap-2 hover:bg-[#800020] transition-colors border border-[#D4AF37]/40 text-sm font-semibold">
-        <span className="material-symbols-outlined text-[18px]">arrow_back</span>
-        Exit Design
-      </Link>
 
       {/* Floating Audio Control Widget */}
       <div className="fixed top-4 right-4 z-50 flex items-center gap-2">
