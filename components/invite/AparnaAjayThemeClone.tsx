@@ -1462,15 +1462,15 @@ ${window.location.href}`;
             <div className="initials-logo">A & A</div>
             <h1 className="invitation-heading">The Wedding Invitation of</h1>
             <div className="couple-names">
-              <span className="name">Ajay</span>
-              <span className="and">&</span>
               <span className="name">Aparna</span>
+              <span className="and">&</span>
+              <span className="name">Ajay</span>
             </div>
             {/* Couple Casual Portrait */}
             <div className="couple-portrait-wrapper">
               <img
                 src="/couple_traditional.jpg"
-                alt="Ajay and Aparna Casual Portrait"
+                alt="Aparna and Ajay Casual Portrait"
                 className="couple-portrait"
               />
             </div>
@@ -1499,7 +1499,7 @@ ${window.location.href}`;
             <div className="couple-portrait-wrapper">
               <img
                 src="/couple_casual.jpg"
-                alt="Ajay and Aparna Traditional Portrait"
+                alt="Aparna and Ajay Traditional Portrait"
                 className="couple-portrait"
               />
             </div>

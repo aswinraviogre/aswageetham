@@ -7,7 +7,7 @@ const KeralaTheme = dynamic(() => import("./KeralaTheme").then(m => m.KeralaThem
 const ChristianTheme = dynamic(() => import("./ChristianTheme").then(m => m.ChristianTheme), { ssr: false });
 const RoyalTheme = dynamic(() => import("./RoyalTheme").then(m => m.RoyalTheme), { ssr: false });
 const ElegantChristianTheme = dynamic(() => import("./ElegantChristianTheme").then(m => m.ElegantChristianTheme), { ssr: false });
-const AjayAparnaTheme = dynamic(() => import("./AjayAparnaThemeClone").then(m => m.AjayAparnaThemeClone), { ssr: false });
+const AjayAparnaTheme = dynamic(() => import("./AparnaAjayThemeClone").then(m => m.AjayAparnaThemeClone), { ssr: false });
 const SreejithSukanyaTheme = dynamic(() => import("./SreejithSukanyaTheme").then(m => m.SreejithSukanyaTheme), { ssr: false });
 const VishnuAthulyaTheme = dynamic(() => import("./VishnuAthulyaTheme").then(m => m.VishnuAthulyaTheme), { ssr: false });
 
