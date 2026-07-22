@@ -90,77 +90,77 @@ const FEATURES = [
 ];
 
 const TEMPLATES = [
-  { 
-    title: "Kerala Traditional", 
+  {
+    title: "Kerala Traditional",
     couple: "Anandhu & Archana",
-    slug: "anandhu-archana-kerala-wedding", 
-    desc: "Rich gold and green traditional theme featuring falling petals, video reels, and traditional music.", 
+    slug: "anandhu-archana-kerala-wedding",
+    desc: "Rich gold and green traditional theme featuring falling petals, video reels, and traditional music.",
     image: "/kerala_couple_1_1777897655779.png",
     bgClass: "border-emerald-500/20 bg-[#0c1813]/90",
     tagColor: "bg-emerald-500/20 text-emerald-300 border border-emerald-500/20",
-    gradient: "from-emerald-900 via-emerald-800 to-emerald-700", 
-    textCol: "text-emerald-200", 
-    subtitleCol: "text-emerald-300" 
+    gradient: "from-emerald-900 via-emerald-800 to-emerald-700",
+    textCol: "text-emerald-200",
+    subtitleCol: "text-emerald-300"
   },
-  { 
-    title: "Christian Elegance", 
+  {
+    title: "Christian Elegance",
     couple: "Daniel & Maria",
-    slug: "daniel-maria-wedding", 
-    desc: "Minimalist heavenly blue and white aesthetic with gentle scroll transitions and interactive elements.", 
+    slug: "daniel-maria-wedding",
+    desc: "Minimalist heavenly blue and white aesthetic with gentle scroll transitions and interactive elements.",
     image: "/sia_img/desktop-sia.png",
     bgClass: "border-sky-500/20 bg-[#07131c]/90",
     tagColor: "bg-sky-500/20 text-sky-300 border border-sky-500/20",
-    gradient: "from-sky-100 via-sky-50 to-white", 
-    textCol: "text-sky-800", 
-    subtitleCol: "text-sky-600" 
+    gradient: "from-sky-100 via-sky-50 to-white",
+    textCol: "text-sky-800",
+    subtitleCol: "text-sky-600"
   },
-  { 
-    title: "Royal Palace", 
+  {
+    title: "Royal Palace",
     couple: "Aditya & Meera",
-    slug: "aditya-meera-royal-wedding", 
-    desc: "Deep maroon and gold luxury theme with sparkling particle effects and cinematic animations.", 
+    slug: "aditya-meera-royal-wedding",
+    desc: "Deep maroon and gold luxury theme with sparkling particle effects and cinematic animations.",
     image: "/hero-bg.jpg",
     bgClass: "border-red-500/20 bg-[#1c080b]/90",
     tagColor: "bg-red-500/20 text-red-300 border border-red-500/20",
-    gradient: "from-[#6b0504] via-[#8d0801] to-[#6b0504]", 
-    textCol: "text-amber-200", 
-    subtitleCol: "text-amber-400" 
+    gradient: "from-[#6b0504] via-[#8d0801] to-[#6b0504]",
+    textCol: "text-amber-200",
+    subtitleCol: "text-amber-400"
   },
-  { 
-    title: "Ajay & Aparna Traditional", 
+  {
+    title: "Ajay & Aparna Traditional",
     couple: "Ajay & Aparna",
-    slug: "ajay-aparna-wedding-digital-invitation", 
-    desc: "Interactive 3D envelope opening sequence, gold wax seal trigger, falling petals, and Kerala traditional background audio.", 
+    slug: "ajay-aparna-wedding-digital-invitation",
+    desc: "Interactive 3D envelope opening sequence, gold wax seal trigger, falling petals, and Kerala traditional background audio.",
     image: "/couple_casual.jpg",
     bgClass: "border-amber-500/20 bg-[#181107]/90",
     tagColor: "bg-amber-500/20 text-amber-300 border border-amber-500/20",
-    gradient: "from-[#1b4332] via-[#2d6a4f] to-[#1b4332]", 
-    textCol: "text-[#d4af37]", 
-    subtitleCol: "text-[#d4af37]/80" 
+    gradient: "from-[#1b4332] via-[#2d6a4f] to-[#1b4332]",
+    textCol: "text-[#d4af37]",
+    subtitleCol: "text-[#d4af37]/80"
   },
-  { 
-    title: "Sreejith & Sukanya Traditional", 
+  {
+    title: "Sreejith & Sukanya Traditional",
     couple: "Sukanya & Sreejith",
-    slug: "sreejith-sukanya-wedding-digital-invitation", 
-    desc: "Interactive 3D envelope, gold wax seal, Kerala traditional background audio, addresses, and contacts.", 
+    slug: "sreejith-sukanya-wedding-digital-invitation",
+    desc: "Interactive 3D envelope, gold wax seal, Kerala traditional background audio, addresses, and contacts.",
     image: "/sukanya_sreejith_couple_1.jpg",
     bgClass: "border-yellow-500/20 bg-[#181507]/90",
     tagColor: "bg-yellow-500/20 text-yellow-300 border border-yellow-500/20",
-    gradient: "from-[#603813] via-[#b29f7f] to-[#603813]", 
-    textCol: "text-[#FAF6F0]", 
-    subtitleCol: "text-[#FAF6F0]/80" 
+    gradient: "from-[#603813] via-[#b29f7f] to-[#603813]",
+    textCol: "text-[#FAF6F0]",
+    subtitleCol: "text-[#FAF6F0]/80"
   },
-  { 
-    title: "Vishnu & Athulya Kerala Premium", 
+  {
+    title: "Vishnu & Athulya Kerala Premium",
     couple: "Vishnu & Athulya",
-    slug: "vishnu-athulya-wedding-digital-invitation", 
-    desc: "Multi-panel slide envelope, gold wax seal, interactive scratch details card, dynamic floating petals, snap carousel, local guestbook, and traditional music.", 
+    slug: "vishnu-athulya-wedding-digital-invitation",
+    desc: "Multi-panel slide envelope, gold wax seal, interactive scratch details card, dynamic floating petals, snap carousel, local guestbook, and traditional music.",
     image: "/vishnu_athulya/couple_close.jpg",
     bgClass: "border-rose-500/20 bg-[#1f0008]/90",
     tagColor: "bg-rose-500/20 text-rose-300 border border-rose-500/20",
-    gradient: "from-[#2b080c] via-[#800020] to-[#2b080c]", 
-    textCol: "text-[#faebb7]", 
-    subtitleCol: "text-[#faebb7]/80" 
+    gradient: "from-[#2b080c] via-[#800020] to-[#2b080c]",
+    textCol: "text-[#faebb7]",
+    subtitleCol: "text-[#faebb7]/80"
   },
 ];
 
@@ -356,9 +356,9 @@ export function LandingHome() {
                 </div>
 
                 <h1 className="font-display text-[2.6rem] font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-[3.2rem]">
-                  Your Wedding,{" "}
+                  Create{" "}
                   <span style={{ background: "linear-gradient(135deg, #a78bfa, #ec4899)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
-                    One Beautiful Link
+                    Beautiful Digital Wedding Invitations
                   </span>
                 </h1>
 
@@ -471,16 +471,15 @@ export function LandingHome() {
                 {TEMPLATES.map((t, idx) => (
                   <div
                     key={t.slug}
-                    className={`group relative flex flex-col rounded-2xl sm:rounded-3xl border border-white/10 bg-[#120a2a]/60 backdrop-blur-md overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:border-purple-500/30 ${
-                      idx >= 4 ? "hidden lg:flex" : "flex"
-                    }`}
+                    className={`group relative flex flex-col rounded-2xl sm:rounded-3xl border border-white/10 bg-[#120a2a]/60 backdrop-blur-md overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:border-purple-500/30 ${idx === 4 ? "hidden lg:flex" : "flex"
+                      }`}
                   >
                     {/* Image Preview Container */}
                     <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-white/10">
-                      <Image 
-                        src={t.image} 
+                      <Image
+                        src={t.image}
                         alt={t.title}
-                        fill 
+                        fill
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                         sizes="(max-width: 768px) 50vw, 360px"
                         unoptimized
@@ -504,7 +503,7 @@ export function LandingHome() {
                           {t.desc}
                         </p>
                       </div>
-                      <Link 
+                      <Link
                         href={`/invite/${t.slug}`}
                         className="inline-flex items-center gap-1 text-[9px] sm:text-xs font-bold text-purple-300 uppercase tracking-widest transition group-hover:gap-2 hover:text-white"
                       >
