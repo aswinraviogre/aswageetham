@@ -1342,6 +1342,10 @@ ${window.location.href}`;
         </div>
       )}
 
+      <p>© aswinraviogre.</p>
     </div>
   );
 }
+
+
+
