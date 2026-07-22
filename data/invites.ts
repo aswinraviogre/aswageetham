@@ -91,5 +91,21 @@ export const invites: InviteData[] = [
     ogImage: "/sukanya_sreejith_couple_1.jpg",
     ogDescription: "👋 Hello!\n\n❤️ You're warmly invited to celebrate our special day.\n\nTap the link below to view our digital invitation.\n\n⬇️",
   },
+  {
+    slug: "vishnu-athulya-wedding-digital-invitation",
+    couple: "Vishnu & Athulya",
+    date: "August 20, 2026",
+    venue: "Seethadhevi Temple, Pulpally",
+    phone: "918281361003",
+    theme: "vishnu-athulya",
+    images: [
+      "/vishnu_athulya/couple_close.jpg",
+      "/vishnu_athulya/couple_full.jpg",
+      "/vishnu_athulya/couple_cart.jpg",
+      "/vishnu_athulya/couple_casual.jpg"
+    ],
+    ogImage: "/vishnu_athulya/couple_close.jpg",
+    ogDescription: "Together with our families, we cordially invite you to celebrate our special day on 20 August 2026. Tap to view the invitation and details.",
+  },
 ];
 

@@ -9,6 +9,7 @@ const RoyalTheme = dynamic(() => import("./RoyalTheme").then(m => m.RoyalTheme),
 const ElegantChristianTheme = dynamic(() => import("./ElegantChristianTheme").then(m => m.ElegantChristianTheme), { ssr: false });
 const AjayAparnaTheme = dynamic(() => import("./AjayAparnaThemeClone").then(m => m.AjayAparnaThemeClone), { ssr: false });
 const SreejithSukanyaTheme = dynamic(() => import("./SreejithSukanyaTheme").then(m => m.SreejithSukanyaTheme), { ssr: false });
+const VishnuAthulyaTheme = dynamic(() => import("./VishnuAthulyaTheme").then(m => m.VishnuAthulyaTheme), { ssr: false });
 
 export function ThemeWrapper({ invite }: { invite: InviteData }) {
   if (invite.theme === "kerala") return <KeralaTheme invite={invite} />;
@@ -17,5 +18,6 @@ export function ThemeWrapper({ invite }: { invite: InviteData }) {
   if (invite.theme === "elegant-christian") return <ElegantChristianTheme invite={invite} />;
   if (invite.theme === "ajay-aparna") return <AjayAparnaTheme invite={invite} />;
   if (invite.theme === "sreejith-sukanya") return <SreejithSukanyaTheme invite={invite} />;
+  if (invite.theme === "vishnu-athulya") return <VishnuAthulyaTheme invite={invite} />;
   return null;
 }
