@@ -631,6 +631,13 @@ ${window.location.href}`;
           transform: scale(1.15) rotate(8deg);
           color: var(--color-maroon-900);
         }
+
+        #event-carousel {
+          width: 100%;
+          overflow-x: auto !important;
+          -webkit-overflow-scrolling: touch;
+          touch-action: pan-x;
+        }
       `}</style>
 
       {/* Desktop Ambient background */}
@@ -1062,7 +1069,7 @@ ${window.location.href}`;
             ref={eventCarouselRef}
             onScroll={handleCarouselScroll}
             id="event-carousel"
-            className="reveal flex overflow-x-auto gap-4 snap-x snap-mandatory scrollbar-none pb-4 px-2"
+            className="reveal flex w-full overflow-x-auto gap-4 snap-x snap-mandatory scrollbar-none pb-4 px-2"
           >
             {/* Card 1: Marriage Ceremony */}
             <div className="w-[290px] shrink-0 snap-center bg-white/95 backdrop-blur-sm rounded-2xl border-2 border-[#D4AF37]/60 p-5 shadow-lg flex flex-col justify-between min-h-[440px]">
