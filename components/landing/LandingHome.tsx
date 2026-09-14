@@ -37,52 +37,52 @@ const IMPORTANCE_ITEMS = [
 const INVITE_CARDS = [
   {
     id: 1,
+    title: "Aswanth & Geethanjali (Ashwageetham)",
+    description: "Ashwageetham Kerala Royal: Traditional royal procession artwork, interactive 3D wax seal envelope, wedding countdown, Thalikettu ceremony at The Hill District Club, and continuous wedding BGM.",
+    imageSrc: "/ashwageetham/theme_card.jpg",
+    href: "/invite/aswanth-geethanjali-wedding-digital-invitation",
+  },
+  {
+    id: 2,
     title: "Anandhu & Archana",
     description: "Kerala Traditional: Rich gold and green traditional theme featuring falling petals, video reels, and traditional music.",
     imageSrc: "/kerala_couple_1_1777897655779.png",
     href: "/invite/anandhu-archana-kerala-wedding",
   },
   {
-    id: 2,
+    id: 3,
     title: "Daniel & Maria",
     description: "Christian Elegance: Minimalist heavenly blue and white aesthetic with gentle scroll transitions.",
     imageSrc: "/sia_img/desktop-sia.png",
     href: "/invite/daniel-maria-wedding",
   },
   {
-    id: 3,
+    id: 4,
     title: "Aditya & Meera",
     description: "Royal Palace: Deep maroon and gold luxury theme with sparkling particle effects and cinematic animations.",
     imageSrc: "/hero-bg.jpg",
     href: "/invite/aditya-meera-royal-wedding",
   },
   {
-    id: 4,
+    id: 5,
     title: "Ajay & Aparna",
     description: "Ajay & Aparna Traditional: Interactive 3D envelope opening sequence, gold wax seal, and traditional background audio.",
     imageSrc: "/couple_casual.jpg",
     href: "/invite/ajay-aparna-wedding-digital-invitation",
   },
   {
-    id: 5,
+    id: 6,
     title: "Sukanya & Sreejith",
     description: "Sreejith & Sukanya Traditional: Interactive 3D envelope, gold wax seal, traditional background audio, addresses, and contacts.",
     imageSrc: "/sukanya_sreejith_couple_1.jpg",
     href: "/invite/sreejith-sukanya-wedding-digital-invitation",
   },
   {
-    id: 6,
+    id: 7,
     title: "Vishnu & Athulya",
     description: "Vishnu & Athulya Kerala Premium: Multi-panel slide envelope, gold wax seal, interactive scratch details card, dynamic floating petals, snap carousel, local guestbook, and traditional music.",
     imageSrc: "/vishnu_athulya/couple_close.jpg",
     href: "/invite/vishnu-athulya-wedding-digital-invitation",
-  },
-  {
-    id: 7,
-    title: "Aswanth & Geethanjali (Ashwageetham)",
-    description: "Ashwageetham Kerala Royal: Traditional royal procession artwork, wax seal envelope, wedding countdown, Thalikettu at The Hill District Club, WhatsApp RSVP, and guestbook.",
-    imageSrc: "/ashwageetham/theme_card.jpg",
-    href: "/invite/aswanth-geethanjali-wedding-digital-invitation",
   },
 ];
 
@@ -97,6 +97,19 @@ const FEATURES = [
 ];
 
 const TEMPLATES = [
+  {
+    title: "Ashwageetham Royal Kerala",
+    couple: "Aswanth & Geethanjali",
+    slug: "aswanth-geethanjali-wedding-digital-invitation",
+    desc: "Ivory and imperial burgundy theme with traditional royal chariot & elephant procession, 3D wax seal envelope, live countdown, and continuous wedding BGM.",
+    image: "/ashwageetham/theme_card.jpg",
+    bgClass: "border-amber-500/40 bg-[#250810]/95",
+    tagColor: "bg-amber-500/20 text-amber-200 border border-amber-500/30",
+    badge: "⭐ Featured",
+    gradient: "from-[#4a0e17] via-[#66182c] to-[#4a0e17]",
+    textCol: "text-[#FAF6EF]",
+    subtitleCol: "text-[#FAF6EF]/80"
+  },
   {
     title: "Kerala Traditional",
     couple: "Anandhu & Archana",
@@ -168,18 +181,6 @@ const TEMPLATES = [
     gradient: "from-[#2b080c] via-[#800020] to-[#2b080c]",
     textCol: "text-[#faebb7]",
     subtitleCol: "text-[#faebb7]/80"
-  },
-  {
-    title: "Ashwageetham Royal Kerala",
-    couple: "Aswanth & Geethanjali",
-    slug: "aswanth-geethanjali-wedding-digital-invitation",
-    desc: "Ivory and imperial burgundy theme with traditional royal chariot & elephant procession, gold jaali filigree, live countdown, and auspicious nadaswaram BGM.",
-    image: "/ashwageetham/theme_card.jpg",
-    bgClass: "border-red-900/30 bg-[#2b080f]/90",
-    tagColor: "bg-red-900/40 text-amber-200 border border-amber-500/30",
-    gradient: "from-[#4a0e17] via-[#66182c] to-[#4a0e17]",
-    textCol: "text-[#FAF6EF]",
-    subtitleCol: "text-[#FAF6EF]/80"
   },
 ];
 
@@ -333,8 +334,9 @@ function TestimonialCard({ img, name, username, body, country }: typeof KERALA_T
 }
 
 export function LandingHome() {
+  const ashwageethamPath = "/invite/aswanth-geethanjali-wedding-digital-invitation";
   const primary = invites[0];
-  const demoPath = `/invite/${primary.slug}`;
+  const demoPath = ashwageethamPath;
   const whatsappUrl = `https://wa.me/${primary.phone}`;
 
   return (
@@ -396,58 +398,60 @@ export function LandingHome() {
                     Start for Free
                   </a>
                   <Link
-                    href="/demo"
-                    className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"
+                    href={ashwageethamPath}
+                    className="inline-flex items-center justify-center gap-2 rounded-xl border border-amber-400/30 bg-amber-500/10 px-7 py-3.5 text-sm font-semibold text-amber-200 backdrop-blur-sm transition hover:bg-amber-500/20 shadow-md"
                   >
-                    View Demo
-                    <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    <span className="material-symbols-outlined text-[18px] text-amber-300">mail</span>
+                    View Ashwageetham Demo
                   </Link>
                 </div>
                 <p className="text-xs text-purple-300/60">No credit card required. Setup takes 5 minutes.</p>
               </div>
 
-              {/* Right — phone mockup */}
+              {/* Right — phone mockup showcasing Ashwageetham */}
               <div className="relative mx-auto flex w-full max-w-[320px] justify-center lg:mx-0 lg:max-w-none lg:justify-end">
                 {/* Floating badge top-left */}
                 <div
-                  className="absolute top-10 -left-4 z-20 flex items-center gap-2.5 rounded-xl border border-white/20 bg-white/15 p-3 shadow-lg backdrop-blur-md sm:-left-8"
+                  className="absolute top-10 -left-4 z-20 flex items-center gap-2.5 rounded-xl border border-amber-500/30 bg-[#250810]/85 p-3 shadow-xl backdrop-blur-md sm:-left-8"
                   style={{ animation: "floatY 4s ease-in-out infinite" }}
                 >
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-purple-500/30">
-                    <span className="material-symbols-outlined text-[18px] text-purple-200">check_circle</span>
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-amber-500/30">
+                    <span className="material-symbols-outlined text-[18px] text-amber-200">mail</span>
                   </div>
                   <div>
-                    <p className="text-xs font-semibold text-white">RSVP Received</p>
-                    <p className="text-[10px] text-purple-200/70">Table 4, Chicken</p>
+                    <p className="text-xs font-semibold text-white">Ashwageetham</p>
+                    <p className="text-[10px] text-amber-200/80">Aswanth &amp; Geethanjali</p>
                   </div>
                 </div>
 
                 {/* Phone */}
-                <div
-                  className="relative h-[500px] w-[248px] overflow-hidden rounded-[34px] border-[6px] border-white/20 bg-slate-900 shadow-2xl sm:h-[540px] sm:w-[268px]"
+                <Link
+                  href={ashwageethamPath}
+                  className="group relative h-[500px] w-[248px] overflow-hidden rounded-[34px] border-[6px] border-amber-500/30 bg-slate-900 shadow-2xl sm:h-[540px] sm:w-[268px] block cursor-pointer"
                   style={{ transform: "perspective(1200px) rotateY(-8deg) rotateX(4deg)", transition: "transform 0.5s ease" }}
+                  title="Click to view Aswanth & Geethanjali Live Invite"
                 >
-                  <Image src={MOCKUP_IMAGE_SRC} alt="Wedding invitation preview" fill className="object-cover" sizes="300px" priority unoptimized />
+                  <Image src="/ashwageetham/theme_card.jpg" alt="Aswanth & Geethanjali wedding invitation preview" fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="300px" priority unoptimized />
                   {/* Bottom bar */}
-                  <div className="absolute bottom-5 left-3 right-3 flex items-center justify-between rounded-xl border border-white/30 bg-white/90 p-3 shadow backdrop-blur-md">
+                  <div className="absolute bottom-5 left-3 right-3 flex items-center justify-between rounded-xl border border-amber-400/40 bg-white/95 p-3 shadow-lg backdrop-blur-md">
                     <div>
-                      <p className="text-xs font-semibold text-slate-900">You&apos;re Invited</p>
-                      <p className="text-[10px] text-slate-500">Oct 12, 2024</p>
+                      <p className="text-xs font-bold text-slate-900">Aswanth &amp; Geethanjali</p>
+                      <p className="text-[10px] text-[#7C1425] font-semibold">Nov 11, 2026 • Royal</p>
                     </div>
-                    <Link href={demoPath} className="rounded-lg px-3 py-1.5 text-[11px] font-bold text-white" style={{ background: "#7c3aed" }}>
-                      RSVP
-                    </Link>
+                    <span className="rounded-lg px-3 py-1.5 text-[11px] font-bold text-white shadow" style={{ background: "linear-gradient(135deg, #7C1425, #9B1D36)" }}>
+                      Open
+                    </span>
                   </div>
                   {/* Notch */}
                   <div className="absolute top-0 left-1/2 h-5 w-24 -translate-x-1/2 rounded-b-xl bg-black/40" />
-                </div>
+                </Link>
 
                 {/* Bottom floating badge */}
                 <div
-                  className="absolute -bottom-2 -right-2 z-20 rounded-xl border border-white/20 bg-white/15 px-4 py-2.5 backdrop-blur-md sm:-right-6"
+                  className="absolute -bottom-2 -right-2 z-20 rounded-xl border border-amber-500/30 bg-[#250810]/85 px-4 py-2.5 backdrop-blur-md sm:-right-6 shadow-lg"
                   style={{ animation: "floatY 4.5s ease-in-out 0.8s infinite" }}
                 >
-                  <p className="text-[11px] font-semibold text-white">✨ 200+ couples love it</p>
+                  <p className="text-[11px] font-semibold text-amber-200">✨ 3D Wax Seal &amp; Royal Chariot</p>
                 </div>
               </div>
             </div>
@@ -459,6 +463,78 @@ export function LandingHome() {
               50% { transform: translateY(-10px); }
             }
           `}</style>
+          </section>
+
+          {/* ── FEATURED SPOTLIGHT: ASHWAGEETHAM ── */}
+          <section className="relative py-14 sm:py-20 bg-gradient-to-b from-[#070215] via-[#1c0612] to-[#0d0020] border-y border-amber-500/20 overflow-hidden">
+            {/* Ambient gold glow */}
+            <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[450px] w-[600px] rounded-full opacity-15" style={{ background: "radial-gradient(circle, #D4AF37 0%, transparent 70%)", filter: "blur(90px)" }} />
+
+            <div className="relative z-10 mx-auto max-w-6xl px-6 sm:px-8">
+              <div className="rounded-3xl border border-amber-500/35 bg-[#250810]/85 backdrop-blur-xl p-6 sm:p-10 lg:p-12 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+                {/* Left Text Column */}
+                <div className="flex-1 text-center lg:text-left">
+                  <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-500/15 px-4 py-1 mb-4 shadow-sm">
+                    <span className="text-amber-300 text-xs font-semibold tracking-widest uppercase">⭐ Featured Live Design</span>
+                  </div>
+
+                  <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#FAF6EE] mb-2 tracking-tight">
+                    Ashwageetham
+                  </h2>
+                  <p className="text-amber-300/80 font-['Cinzel'] tracking-widest text-xs uppercase mb-4 font-semibold">
+                    Aswanth &amp; Geethanjali • November 11, 2026
+                  </p>
+
+                  <p className="text-purple-100/80 text-sm sm:text-base mb-6 leading-relaxed max-w-xl">
+                    Experience our flagship Kerala Royal wedding invitation suite. Features an interactive 3D wax seal envelope opening, traditional chariot &amp; elephant royal procession artwork, pencil sketch portrait, auspicious nadaswaram BGM, and instant WhatsApp RSVP.
+                  </p>
+
+                  <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3.5">
+                    <Link
+                      href={ashwageethamPath}
+                      className="inline-flex items-center justify-center gap-2 rounded-xl px-7 py-3.5 text-sm font-semibold text-white shadow-xl transition-all hover:scale-105"
+                      style={{ background: "linear-gradient(135deg, #7C1425, #A51D36)", boxShadow: "0 6px 24px rgba(124,20,37,0.5)" }}
+                    >
+                      <span className="material-symbols-outlined text-[18px]">mail</span>
+                      Open 3D Invitation
+                    </Link>
+                    <a
+                      href="https://wa.me/918848772371?text=Hi!%20I%20love%20the%20Ashwageetham%20wedding%20invitation%20design.%20I%20would%20like%20to%20create%20one%20for%20my%20wedding."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 rounded-xl border border-amber-400/40 bg-amber-500/10 px-6 py-3.5 text-sm font-semibold text-amber-200 backdrop-blur-sm transition hover:bg-amber-500/20"
+                    >
+                      <i className="fab fa-whatsapp text-emerald-400 text-base"></i>
+                      Order This Design
+                    </a>
+                  </div>
+                </div>
+
+                {/* Right Visual Card Preview */}
+                <Link
+                  href={ashwageethamPath}
+                  className="relative w-full max-w-[360px] aspect-[4/3] sm:aspect-[16/11] rounded-2xl overflow-hidden border-2 border-amber-500/40 shadow-2xl group cursor-pointer block"
+                >
+                  <Image
+                    src="/ashwageetham/theme_card.jpg"
+                    alt="Ashwageetham Wedding Invitation Preview"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    sizes="(max-width: 768px) 100vw, 360px"
+                    unoptimized
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex flex-col justify-end p-5">
+                    <span className="text-[10px] font-bold text-amber-300 uppercase tracking-widest">
+                      Live Digital Invite
+                    </span>
+                    <p className="text-white text-lg font-bold">Aswanth &amp; Geethanjali</p>
+                    <span className="text-amber-200/90 text-xs flex items-center gap-1 mt-0.5 group-hover:translate-x-1 transition-transform font-medium">
+                      Click to experience <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                    </span>
+                  </div>
+                </Link>
+              </div>
+            </div>
           </section>
 
           {/* ── TEMPLATES ── */}
@@ -487,11 +563,10 @@ export function LandingHome() {
                 <p className="mx-auto text-base text-purple-200/60" style={{ maxWidth: "560px" }}>Curated templates you can personalize to match your wedding vision.</p>
               </div>
               <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 lg:gap-8 max-w-5xl mx-auto">
-                {TEMPLATES.map((t, idx) => (
+                {TEMPLATES.map((t) => (
                   <div
                     key={t.slug}
-                    className={`group relative flex flex-col rounded-2xl sm:rounded-3xl border border-white/10 bg-[#120a2a]/60 backdrop-blur-md overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:border-purple-500/30 ${idx === 4 ? "hidden lg:flex" : "flex"
-                      }`}
+                    className="group relative flex flex-col rounded-2xl sm:rounded-3xl border border-white/10 bg-[#120a2a]/60 backdrop-blur-md overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:border-purple-500/30"
                   >
                     {/* Image Preview Container */}
                     <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-white/10">
