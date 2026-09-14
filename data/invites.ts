@@ -107,5 +107,18 @@ export const invites: InviteData[] = [
     ogImage: "/vishnu_athulya/couple_close.jpg",
     ogDescription: "Together with our families, we cordially invite you to celebrate our special day on 20 August 2026. Tap to view the invitation and details.",
   },
+  {
+    slug: "aswanth-geethanjali-wedding-digital-invitation",
+    couple: "Aswanth & Geethanjali",
+    date: "Wednesday, 11th November 2026",
+    venue: "The Hill District Club, Kolagapara",
+    phone: "918848772371",
+    theme: "ashwageetham",
+    images: [
+      "/ashwageetham/theme_card.jpg"
+    ],
+    ogImage: "/ashwageetham/theme_card.jpg",
+    ogDescription: "Mr. Sivarajan M.M. & Mrs. Rohini Sivarajan cordially invite you with family to the wedding of Aswanth & Geethanjali on Wednesday, 11th November 2026 at The Hill District Club, Kolagapara.",
+  },
 ];
 

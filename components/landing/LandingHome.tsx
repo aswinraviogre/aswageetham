@@ -77,6 +77,13 @@ const INVITE_CARDS = [
     imageSrc: "/vishnu_athulya/couple_close.jpg",
     href: "/invite/vishnu-athulya-wedding-digital-invitation",
   },
+  {
+    id: 7,
+    title: "Aswanth & Geethanjali (Ashwageetham)",
+    description: "Ashwageetham Kerala Royal: Traditional royal procession artwork, wax seal envelope, wedding countdown, Thalikettu at The Hill District Club, WhatsApp RSVP, and guestbook.",
+    imageSrc: "/ashwageetham/theme_card.jpg",
+    href: "/invite/aswanth-geethanjali-wedding-digital-invitation",
+  },
 ];
 
 const MOCKUP_IMAGE_SRC =
@@ -161,6 +168,18 @@ const TEMPLATES = [
     gradient: "from-[#2b080c] via-[#800020] to-[#2b080c]",
     textCol: "text-[#faebb7]",
     subtitleCol: "text-[#faebb7]/80"
+  },
+  {
+    title: "Ashwageetham Royal Kerala",
+    couple: "Aswanth & Geethanjali",
+    slug: "aswanth-geethanjali-wedding-digital-invitation",
+    desc: "Ivory and imperial burgundy theme with traditional royal chariot & elephant procession, gold jaali filigree, live countdown, and auspicious nadaswaram BGM.",
+    image: "/ashwageetham/theme_card.jpg",
+    bgClass: "border-red-900/30 bg-[#2b080f]/90",
+    tagColor: "bg-red-900/40 text-amber-200 border border-amber-500/30",
+    gradient: "from-[#4a0e17] via-[#66182c] to-[#4a0e17]",
+    textCol: "text-[#FAF6EF]",
+    subtitleCol: "text-[#FAF6EF]/80"
   },
 ];
 

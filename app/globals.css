@@ -30,21 +30,6 @@
   --color-accent-light: #fde68a;
 
   /* Surface */
-  --color-background: #ffffff;
-  --color-surface: #faf9fe;
-  --color-surface-2: #f3f0ff;
-  --color-on-background: #0f0a2e;
-  --color-on-surface: #1e1a3a;
-  --color-on-surface-muted: #6b7280;
-
-  /* Spacing */
-  --spacing-xs: 4px;
-  --spacing-base: 8px;
-  --spacing-sm: 12px;
-  --spacing-md: 24px;
-  --spacing-lg: 48px;
-  --spacing-xl: 80px;
-  --spacing-gutter: 24px;
 
   /* Typography — families */
   --font-display: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;

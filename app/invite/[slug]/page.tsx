@@ -45,7 +45,7 @@ export default async function InvitePage({ params }: InvitePageProps) {
 
   if (!invite) notFound();
 
-  if (invite.theme === "kerala" || invite.theme === "christian" || invite.theme === "royal" || invite.theme === "elegant-christian" || invite.theme === "ajay-aparna" || invite.theme === "sreejith-sukanya" || invite.theme === "vishnu-athulya") {
+  if (invite.theme === "kerala" || invite.theme === "christian" || invite.theme === "royal" || invite.theme === "elegant-christian" || invite.theme === "ajay-aparna" || invite.theme === "sreejith-sukanya" || invite.theme === "vishnu-athulya" || invite.theme === "ashwageetham") {
     return <ThemeWrapper invite={invite} />;
   }
 
