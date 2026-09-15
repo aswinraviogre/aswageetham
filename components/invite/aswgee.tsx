@@ -938,41 +938,46 @@ export function AswgeeTheme({ invite }: { invite?: InviteData }) {
                   </p>
                 </div>
 
-                {/* SACRED ADIYOGI BLESSING & DEVOTIONAL ART MURAL */}
-                <div className="w-full max-w-[440px] my-8 py-5 px-3 sm:px-5 rounded-2xl bg-gradient-to-b from-[#FAF5EA]/90 via-[#F7EFE1]/80 to-[#FAF5EA]/90 border border-[#D4AF37]/45 shadow-[0_10px_35px_rgba(44,37,32,0.08)] flex flex-col items-center text-center relative overflow-hidden backdrop-blur-sm">
-                  {/* Subtle decorative radial background glow */}
-                  <div className="absolute top-0 inset-x-0 h-28 bg-gradient-to-b from-[#FFFDF8] to-transparent pointer-events-none opacity-60" />
-
+                {/* SACRED ADIYOGI BLESSING & DEVOTIONAL ART MURAL (BORDERLESS & SEAMLESSLY FEATHERED) */}
+                <div className="w-full max-w-[440px] my-10 flex flex-col items-center text-center relative select-none">
                   {/* Auspicious Crescent & Trishul Motif Header */}
-                  <div className="flex items-center gap-2 mb-1.5 z-10">
-                    <div className="w-7 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37] to-[#C5A059]" />
-                    <span className="font-['Cinzel'] text-[9.5px] sm:text-[10px] tracking-[0.35em] text-[#8C6D23] uppercase font-bold">
+                  <div className="flex items-center gap-2.5 mb-1.5">
+                    <div className="w-8 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37] to-[#C5A059]" />
+                    <span className="font-['Cinzel'] text-[9.5px] sm:text-[10px] tracking-[0.38em] text-[#8C6D23] uppercase font-bold">
                       Divine Grace
                     </span>
-                    <div className="w-7 h-[1px] bg-gradient-to-l from-transparent via-[#D4AF37] to-[#C5A059]" />
+                    <div className="w-8 h-[1px] bg-gradient-to-l from-transparent via-[#D4AF37] to-[#C5A059]" />
                   </div>
 
-                  <h3 className="font-['Cormorant_Garamond'] text-2xl sm:text-3xl italic text-[#7C1425] font-semibold tracking-wide leading-snug mb-1 z-10">
+                  <h3 className="font-['Cormorant_Garamond'] text-2xl sm:text-3xl italic text-[#7C1425] font-semibold tracking-wide leading-snug mb-1">
                     Under the Grace of Adiyogi
                   </h3>
 
-                  <div className="w-16 h-[1.2px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent my-1.5 z-10" />
+                  <div className="w-16 h-[1.2px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent my-1.5" />
 
-                  {/* Masterfully Feathered Artwork Container */}
-                  <div className="relative w-full max-w-[340px] sm:max-w-[370px] aspect-[560/956] my-2 select-none z-10 group">
+                  {/* 100% Borderless, Double-Feathered Artwork */}
+                  <div
+                    className="relative w-full max-w-[340px] sm:max-w-[370px] aspect-[560/956] my-3 select-none"
+                    style={{
+                      maskImage:
+                        "radial-gradient(ellipse 90% 86% at 50% 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)",
+                      WebkitMaskImage:
+                        "radial-gradient(ellipse 90% 86% at 50% 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)",
+                    }}
+                  >
                     <img
                       src="/ashwageetham/adiyogi_sketch_feathered.png"
                       alt="Aswanth & Geethanjali seeking the blessings of Adiyogi Shiva"
-                      className="w-full h-full object-contain filter contrast-[1.02] brightness-[1.01] transition-transform duration-700 group-hover:scale-[1.015]"
+                      className="w-full h-full object-contain filter contrast-[1.02] brightness-[1.01]"
                     />
                   </div>
 
                   {/* Devotional Inscription & Sacred Mantra */}
-                  <div className="z-10 mt-1 max-w-[350px]">
+                  <div className="mt-1 max-w-[350px]">
                     <p className="font-serif italic text-xs sm:text-[13px] text-[#4A382A] leading-relaxed">
                       &ldquo;Under the calm and eternal presence of Adiyogi, seeking divine blessings for a lifelong journey filled with serenity, strength, and boundless love.&rdquo;
                     </p>
-                    <span className="block font-['Cinzel'] text-[9px] tracking-[0.28em] uppercase text-[#A08157] font-semibold mt-2">
+                    <span className="block font-['Cinzel'] text-[9px] tracking-[0.28em] uppercase text-[#A08157] font-semibold mt-2.5">
                       Om Namah Shivaya
                     </span>
                   </div>
