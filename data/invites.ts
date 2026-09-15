@@ -118,7 +118,7 @@ export const invites: InviteData[] = [
       "/ashwageetham/theme_card.jpg"
     ],
     ogImage: "/ashwageetham/theme_card.jpg",
-    ogDescription: "Mr. Sivarajan M.M. & Mrs. Rohini Sivarajan cordially invite you with family to the wedding of Aswanth & Geethanjali on Wednesday, 11th November 2026 at The Hill District Club, Kolagapara.",
+    ogDescription: "👋 Hello!\n\n❤️ You're warmly invited to celebrate our special day.\n\nTap the link below to view our digital invitation.\n\n⬇️",
   },
 ];
 

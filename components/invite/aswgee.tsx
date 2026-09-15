@@ -249,7 +249,13 @@ export function AswgeeTheme({ invite }: { invite?: InviteData }) {
   const handleWhatsappShare = (e: React.MouseEvent) => {
     e.preventDefault();
     const url = typeof window !== "undefined" ? window.location.href : "";
-    const shareMessage = `Together with our families, we cordially invite you to celebrate our special day on Wednesday, 11th November 2026. View our interactive wedding invitation card here: ${url}`;
+    const shareMessage = `👋 Hello!
+
+❤️ You're warmly invited to celebrate our special day.
+
+Tap the link below to view our digital invitation.
+
+⬇️: ${url}`;
     const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareMessage)}`;
     window.open(whatsappUrl, "_blank");
   };
