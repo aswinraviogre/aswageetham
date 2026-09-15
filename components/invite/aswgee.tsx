@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import Link from "next/link";
 import type { InviteData } from "@/data/invites";
 
 // ---------------------------------------------------------------------------
@@ -630,16 +629,6 @@ export function AswgeeTheme({ invite }: { invite?: InviteData }) {
           {/* Top Sticky Navigation Bar */}
           <header className="fixed top-3 inset-x-0 z-40 px-3 sm:px-6 flex items-center justify-between pointer-events-none max-w-7xl mx-auto w-full">
             <div className="flex items-center gap-2 pointer-events-auto">
-              <Link
-                href="/demo"
-                className="bg-[#FAF5EA]/90 backdrop-blur-md text-[#580F1E] px-3.5 py-1.5 rounded-full flex items-center gap-1.5 hover:bg-[#FAF5EA] transition-all border border-[#D4AF37]/40 text-xs shadow-md group hover:scale-105"
-              >
-                <span className="material-symbols-outlined text-[16px] group-hover:-translate-x-0.5 transition-transform">
-                  arrow_back
-                </span>
-                <span className="font-sans font-medium">All Invites</span>
-              </Link>
-
               {/* Replay Envelope Button */}
               <button
                 onClick={() => {
@@ -900,17 +889,7 @@ export function AswgeeTheme({ invite }: { invite?: InviteData }) {
                   </p>
                 </div>
 
-                {/* LOVE AND REGARDS */}
-                <div className="mt-6 pt-4 border-t border-[#D4AF37]/30 w-full max-w-[360px]">
-                  <span className="font-['Cinzel'] text-[9.5px] tracking-[0.3em] uppercase text-[#A08157] font-semibold block mb-1">
-                    Love and Regards
-                  </span>
-                  <p className="font-serif text-xs sm:text-[13px] text-[#4A382A] font-medium">
-                    Aswathy, Akhil, Anuraj
-                    <br />
-                    <span className="text-[#7C1425] font-semibold">Ridhai & Lyra</span>
-                  </p>
-                </div>
+
 
                 {/* INTERACTIVE ACTION CARDS */}
                 <div className="w-full mt-8 space-y-3 max-w-[420px]">
