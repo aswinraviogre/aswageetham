@@ -254,8 +254,7 @@ export function AswgeeTheme({ invite }: { invite?: InviteData }) {
 ❤️ You're warmly invited to celebrate our special day.
 
 Tap the link below to view our digital invitation.
-
-⬇️: ${url}`;
+: ${url}`;
     const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareMessage)}`;
     window.open(whatsappUrl, "_blank");
   };
@@ -393,9 +392,8 @@ Tap the link below to view our digital invitation.
       {/* ========================================================================= */}
       {isClosed && (
         <div
-          className={`fixed inset-0 z-40 flex flex-col items-center justify-center select-none overflow-hidden transition-all duration-700 ${
-            phase === "revealing" ? "opacity-0 scale-105 pointer-events-none" : "opacity-100"
-          }`}
+          className={`fixed inset-0 z-40 flex flex-col items-center justify-center select-none overflow-hidden transition-all duration-700 ${phase === "revealing" ? "opacity-0 scale-105 pointer-events-none" : "opacity-100"
+            }`}
           style={{
             background:
               "radial-gradient(ellipse at 50% 50%, #9E8166 0%, #7A5F47 40%, #523D2D 75%, #342419 100%)",
@@ -432,25 +430,23 @@ Tap the link below to view our digital invitation.
           >
             {/* Contact Shadow beneath the entire tabletop scene */}
             <div
-              className={`absolute bottom-[-16px] w-[88%] max-w-[400px] h-[32px] rounded-full blur-2xl pointer-events-none transition-all duration-700 ${
-                phase === "idle"
-                  ? "bg-[#160B04]/75 animate-envelope-shadow"
-                  : "bg-[#160B04]/40 scale-95"
-              }`}
+              className={`absolute bottom-[-16px] w-[88%] max-w-[400px] h-[32px] rounded-full blur-2xl pointer-events-none transition-all duration-700 ${phase === "idle"
+                ? "bg-[#160B04]/75 animate-envelope-shadow"
+                : "bg-[#160B04]/40 scale-95"
+                }`}
             />
 
             {/* THE SCENE CONTAINER: Perfectly Scaled to Fit Short and Tall Viewports */}
             <div
               onClick={handleOpenEnvelope}
-              className={`relative w-[min(90vw,410px)] max-h-[min(82vh,620px)] aspect-[576/1024] cursor-pointer select-none overflow-visible transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform-gpu ${
-                phase === "idle"
-                  ? "animate-envelope-float hover:scale-[1.015]"
-                  : phase === "pressing"
+              className={`relative w-[min(90vw,410px)] max-h-[min(82vh,620px)] aspect-[576/1024] cursor-pointer select-none overflow-visible transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform-gpu ${phase === "idle"
+                ? "animate-envelope-float hover:scale-[1.015]"
+                : phase === "pressing"
                   ? "scale-[0.985] translate-y-1"
                   : phase === "sliding"
-                  ? "scale-[1.03]"
-                  : "scale-100"
-              }`}
+                    ? "scale-[1.03]"
+                    : "scale-100"
+                }`}
               style={{
                 transformStyle: "preserve-3d",
                 filter: "drop-shadow(0 25px 55px rgba(18, 10, 5, 0.75))",
@@ -486,13 +482,12 @@ Tap the link below to view our digital invitation.
 
                 {/* 2. INNER INVITATION CARD (Sliding Up with Ashwageetham Branding) */}
                 <div
-                  className={`absolute inset-x-2 sm:inset-x-3 top-2 rounded-xl bg-[#FAF6EE] border border-[#D4AF37]/75 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] z-10 overflow-hidden flex flex-col items-center justify-between p-3 sm:p-4 text-center ${
-                    phase === "sliding" || phase === "revealing"
-                      ? "-translate-y-28 sm:-translate-y-36 translate-z-30 scale-[1.04] shadow-[0_35px_80px_rgba(15,8,4,0.7)]"
-                      : phase === "unfolding"
+                  className={`absolute inset-x-2 sm:inset-x-3 top-2 rounded-xl bg-[#FAF6EE] border border-[#D4AF37]/75 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] z-10 overflow-hidden flex flex-col items-center justify-between p-3 sm:p-4 text-center ${phase === "sliding" || phase === "revealing"
+                    ? "-translate-y-28 sm:-translate-y-36 translate-z-30 scale-[1.04] shadow-[0_35px_80px_rgba(15,8,4,0.7)]"
+                    : phase === "unfolding"
                       ? "translate-y-0 translate-z-10 scale-[1.01] shadow-[0_20px_45px_rgba(15,8,4,0.4)]"
                       : "translate-y-0 scale-100 shadow-sm"
-                  }`}
+                    }`}
                   style={{
                     height: "94%",
                     transformStyle: "preserve-3d",
@@ -585,16 +580,15 @@ Tap the link below to view our digital invitation.
 
                 {/* 5. WAX SEAL */}
                 <div
-                  className={`absolute z-40 transition-all duration-600 ease-[cubic-bezier(0.2,0.8,0.2,1)] pointer-events-none ${
-                    phase === "pressing"
-                      ? "scale-[0.94]"
-                      : phase === "unsealing" ||
-                        phase === "unfolding" ||
-                        phase === "sliding" ||
-                        phase === "revealing"
+                  className={`absolute z-40 transition-all duration-600 ease-[cubic-bezier(0.2,0.8,0.2,1)] pointer-events-none ${phase === "pressing"
+                    ? "scale-[0.94]"
+                    : phase === "unsealing" ||
+                      phase === "unfolding" ||
+                      phase === "sliding" ||
+                      phase === "revealing"
                       ? "scale-[1.26] -translate-y-10 translate-z-30 opacity-0 rotate-[6deg]"
                       : "scale-100"
-                  }`}
+                    }`}
                   style={{
                     left: "50.28%",
                     top: "48.70%",
@@ -697,7 +691,7 @@ Tap the link below to view our digital invitation.
 
           {/* MAIN SCREEN-FITTED CONTAINER: RESPONSIVE DUAL-COLUMN ON DESKTOP, FLUID STREAM ON MOBILE */}
           <div className="w-full min-h-screen flex flex-col lg:flex-row items-stretch justify-center relative">
-            
+
             {/* ------------------------------------------------------------- */}
             {/* ------------------------------------------------------------- */}
             {/* DESKTOP LEFT SHOWCASE PANEL (FIXED 100vh VIEWPORT FIT - FULL SCREEN FILL) */}
@@ -705,7 +699,7 @@ Tap the link below to view our digital invitation.
             <aside className="hidden lg:flex lg:w-[48%] xl:w-[45%] h-screen sticky top-0 flex-col items-center justify-between relative overflow-hidden bg-gradient-to-b from-[#FAF6EE] via-[#F4ECE1] to-[#EFE4D2] border-r border-[#D4AF37]/40 shadow-2xl select-none group">
               {/* Subtle background ornamentation */}
               <div className="absolute inset-0 pointer-events-none opacity-25 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:24px_24px]" />
-              
+
               {/* FULL BLEED SCREEN-FILLING ARTWORK */}
               <div className="absolute inset-0 w-full h-full">
                 {leftArtwork === "portrait" ? (
@@ -751,22 +745,20 @@ Tap the link below to view our digital invitation.
                   <button
                     type="button"
                     onClick={() => setLeftArtwork("portrait")}
-                    className={`px-3.5 py-1 rounded-full text-[10px] xl:text-[11px] font-['Cinzel'] tracking-wider uppercase font-bold transition-all ${
-                      leftArtwork === "portrait"
-                        ? "bg-[#7C1425] text-[#FAF6EE] shadow-sm"
-                        : "text-[#6A5340] hover:text-[#1E1916]"
-                    }`}
+                    className={`px-3.5 py-1 rounded-full text-[10px] xl:text-[11px] font-['Cinzel'] tracking-wider uppercase font-bold transition-all ${leftArtwork === "portrait"
+                      ? "bg-[#7C1425] text-[#FAF6EE] shadow-sm"
+                      : "text-[#6A5340] hover:text-[#1E1916]"
+                      }`}
                   >
                     Wedding Portrait
                   </button>
                   <button
                     type="button"
                     onClick={() => setLeftArtwork("adiyogi")}
-                    className={`px-3.5 py-1 rounded-full text-[10px] xl:text-[11px] font-['Cinzel'] tracking-wider uppercase font-bold transition-all ${
-                      leftArtwork === "adiyogi"
-                        ? "bg-[#7C1425] text-[#FAF6EE] shadow-sm"
-                        : "text-[#6A5340] hover:text-[#1E1916]"
-                    }`}
+                    className={`px-3.5 py-1 rounded-full text-[10px] xl:text-[11px] font-['Cinzel'] tracking-wider uppercase font-bold transition-all ${leftArtwork === "adiyogi"
+                      ? "bg-[#7C1425] text-[#FAF6EE] shadow-sm"
+                      : "text-[#6A5340] hover:text-[#1E1916]"
+                      }`}
                   >
                     Adiyogi Grace
                   </button>
