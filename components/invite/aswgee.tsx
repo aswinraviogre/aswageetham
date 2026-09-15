@@ -89,6 +89,9 @@ export function AswgeeTheme({ invite }: { invite?: InviteData }) {
     "idle" | "pressing" | "unsealing" | "unfolding" | "sliding" | "revealing" | "revealed"
   >("idle");
 
+  // Artwork switcher for left showcase panel
+  const [leftArtwork, setLeftArtwork] = useState<"portrait" | "adiyogi">("portrait");
+
   // Audio playback state
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -717,17 +720,63 @@ export function AswgeeTheme({ invite }: { invite?: InviteData }) {
                 </div>
               </div>
 
-              {/* Center: Couple Pencil Sketch Portrait in Royal Gold Filigree Frame */}
-              <div className="w-full max-w-[340px] xl:max-w-[370px] aspect-[9/12] rounded-2xl overflow-hidden bg-[#ECE4D5] shadow-[0_20px_50px_rgba(44,37,32,0.25)] relative border-2 border-[#D4AF37]/70 z-10 group">
-                <img
-                  src="/ashwageetham/aswanth_geethanjali_sketch.jpg"
-                  alt="Wedding Portrait of Aswanth and Geethanjali"
-                  className="w-full h-full object-cover object-top filter contrast-[1.03] brightness-[1.01] group-hover:scale-105 transition-transform duration-1000 ease-out"
-                />
-                <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#27150C]/80 via-[#27150C]/30 to-transparent flex items-end justify-center pb-4">
-                  <p className="font-['Alex_Brush'] text-3xl xl:text-4xl text-[#FAF6EE] drop-shadow-md">
-                    Aswanth & Geethanjali
-                  </p>
+              {/* Center: Artwork Frame with Switcher Pills */}
+              <div className="w-full max-w-[340px] xl:max-w-[370px] flex flex-col items-center z-10">
+                {/* Switcher Pills */}
+                <div className="flex items-center gap-1.5 p-1 rounded-full bg-[#ECE4D5]/90 border border-[#D4AF37]/50 mb-2.5 shadow-sm">
+                  <button
+                    type="button"
+                    onClick={() => setLeftArtwork("portrait")}
+                    className={`px-3 py-1 rounded-full text-[9px] xl:text-[10px] font-['Cinzel'] tracking-wider uppercase font-bold transition-all ${
+                      leftArtwork === "portrait"
+                        ? "bg-[#7C1425] text-[#FAF6EE] shadow-sm"
+                        : "text-[#6A5340] hover:text-[#1E1916]"
+                    }`}
+                  >
+                    Wedding Portrait
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setLeftArtwork("adiyogi")}
+                    className={`px-3 py-1 rounded-full text-[9px] xl:text-[10px] font-['Cinzel'] tracking-wider uppercase font-bold transition-all ${
+                      leftArtwork === "adiyogi"
+                        ? "bg-[#7C1425] text-[#FAF6EE] shadow-sm"
+                        : "text-[#6A5340] hover:text-[#1E1916]"
+                    }`}
+                  >
+                    Adiyogi Grace
+                  </button>
+                </div>
+
+                {/* Royal Gold Filigree Frame */}
+                <div className="w-full aspect-[9/12] rounded-2xl overflow-hidden bg-[#ECE4D5] shadow-[0_20px_50px_rgba(44,37,32,0.25)] relative border-2 border-[#D4AF37]/70 group">
+                  {leftArtwork === "portrait" ? (
+                    <>
+                      <img
+                        src="/ashwageetham/aswanth_geethanjali_sketch.jpg"
+                        alt="Wedding Portrait of Aswanth and Geethanjali"
+                        className="w-full h-full object-cover object-top filter contrast-[1.03] brightness-[1.01] group-hover:scale-105 transition-transform duration-1000 ease-out"
+                      />
+                      <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#27150C]/80 via-[#27150C]/30 to-transparent flex items-end justify-center pb-4">
+                        <p className="font-['Alex_Brush'] text-3xl xl:text-4xl text-[#FAF6EE] drop-shadow-md">
+                          Aswanth & Geethanjali
+                        </p>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <img
+                        src="/ashwageetham/adiyogi_sketch.jpg"
+                        alt="Aswanth & Geethanjali before Adiyogi Shiva"
+                        className="w-full h-full object-cover object-top filter contrast-[1.03] brightness-[1.01] group-hover:scale-105 transition-transform duration-1000 ease-out"
+                      />
+                      <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#27150C]/80 via-[#27150C]/30 to-transparent flex items-end justify-center pb-4">
+                        <p className="font-['Cormorant_Garamond'] italic font-semibold text-xl xl:text-2xl text-[#FAF6EE] drop-shadow-md">
+                          Under Adiyogi&apos;s Grace
+                        </p>
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
 
@@ -887,6 +936,46 @@ export function AswgeeTheme({ invite }: { invite?: InviteData }) {
                   <p className="font-serif text-xs sm:text-sm text-[#6A5340]">
                     Kolagapara, Wayanad, Kerala
                   </p>
+                </div>
+
+                {/* SACRED ADIYOGI BLESSING & DEVOTIONAL ART MURAL */}
+                <div className="w-full max-w-[440px] my-8 py-5 px-3 sm:px-5 rounded-2xl bg-gradient-to-b from-[#FAF5EA]/90 via-[#F7EFE1]/80 to-[#FAF5EA]/90 border border-[#D4AF37]/45 shadow-[0_10px_35px_rgba(44,37,32,0.08)] flex flex-col items-center text-center relative overflow-hidden backdrop-blur-sm">
+                  {/* Subtle decorative radial background glow */}
+                  <div className="absolute top-0 inset-x-0 h-28 bg-gradient-to-b from-[#FFFDF8] to-transparent pointer-events-none opacity-60" />
+
+                  {/* Auspicious Crescent & Trishul Motif Header */}
+                  <div className="flex items-center gap-2 mb-1.5 z-10">
+                    <div className="w-7 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37] to-[#C5A059]" />
+                    <span className="font-['Cinzel'] text-[9.5px] sm:text-[10px] tracking-[0.35em] text-[#8C6D23] uppercase font-bold">
+                      Divine Grace
+                    </span>
+                    <div className="w-7 h-[1px] bg-gradient-to-l from-transparent via-[#D4AF37] to-[#C5A059]" />
+                  </div>
+
+                  <h3 className="font-['Cormorant_Garamond'] text-2xl sm:text-3xl italic text-[#7C1425] font-semibold tracking-wide leading-snug mb-1 z-10">
+                    Under the Grace of Adiyogi
+                  </h3>
+
+                  <div className="w-16 h-[1.2px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent my-1.5 z-10" />
+
+                  {/* Masterfully Feathered Artwork Container */}
+                  <div className="relative w-full max-w-[340px] sm:max-w-[370px] aspect-[560/956] my-2 select-none z-10 group">
+                    <img
+                      src="/ashwageetham/adiyogi_sketch_feathered.png"
+                      alt="Aswanth & Geethanjali seeking the blessings of Adiyogi Shiva"
+                      className="w-full h-full object-contain filter contrast-[1.02] brightness-[1.01] transition-transform duration-700 group-hover:scale-[1.015]"
+                    />
+                  </div>
+
+                  {/* Devotional Inscription & Sacred Mantra */}
+                  <div className="z-10 mt-1 max-w-[350px]">
+                    <p className="font-serif italic text-xs sm:text-[13px] text-[#4A382A] leading-relaxed">
+                      &ldquo;Under the calm and eternal presence of Adiyogi, seeking divine blessings for a lifelong journey filled with serenity, strength, and boundless love.&rdquo;
+                    </p>
+                    <span className="block font-['Cinzel'] text-[9px] tracking-[0.28em] uppercase text-[#A08157] font-semibold mt-2">
+                      Om Namah Shivaya
+                    </span>
+                  </div>
                 </div>
 
 
