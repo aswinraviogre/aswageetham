@@ -818,19 +818,21 @@ export function AswgeeTheme({ invite }: { invite?: InviteData }) {
 
                   {/* 2. Wedding Portrait - Clean, Full-Width & Seamlessly Feathered (Zero Overlap) */}
                   <div
-                    className="w-full max-w-[420px] sm:max-w-[460px] aspect-[744/1200] relative mx-auto my-2 select-none flex items-center justify-center overflow-hidden"
+                    className="w-full max-w-[420px] sm:max-w-[460px] aspect-[768/1364] relative mx-auto my-2 select-none flex items-center justify-center overflow-hidden"
                     style={{
                       maskImage:
-                        "radial-gradient(ellipse 92% 90% at 50% 50%, rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%)",
+                        "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 68%, rgba(0,0,0,0) 98%)",
                       WebkitMaskImage:
-                        "radial-gradient(ellipse 92% 90% at 50% 50%, rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%)",
+                        "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 68%, rgba(0,0,0,0) 98%)",
                     }}
                   >
                     <img
                       src="/ashwageetham/aswanth_geethanjali_sketch_feathered.png"
                       alt="Wedding Portrait of Aswanth and Geethanjali"
-                      className="w-full h-full object-cover object-top filter contrast-[1.03] brightness-[1.01]"
+                      className="w-full h-full object-contain object-top filter contrast-[1.03] brightness-[1.01]"
                     />
+                    {/* Seamless Bottom Feathering Gradient Overlay */}
+                    <div className="absolute inset-x-0 bottom-0 h-32 sm:h-40 bg-gradient-to-t from-[#FFFDF9] via-[#FFFDF9]/85 to-transparent pointer-events-none" />
                   </div>
                 </div>
 
