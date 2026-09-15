@@ -253,7 +253,7 @@ export function AswgeeTheme({ invite }: { invite?: InviteData }) {
 
   // WhatsApp RSVP link directly to family
   const getWhatsAppRsvpUrl = () => {
-    const phone = invite?.phone || "918848772371";
+    const phone = invite?.phone || "917356558475";
     const msg = encodeURIComponent(
       "Namaste! 🙏\n\nWe are delighted to receive the wedding invitation of ASWANTH & GEETHANJALI on Wednesday, 11th November 2026 at The Hill District Club, Kolagapara.\n\nWe will be honored to attend and offer our blessings to the couple! 🌸"
     );

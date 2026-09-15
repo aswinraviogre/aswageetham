@@ -112,7 +112,7 @@ export const invites: InviteData[] = [
     couple: "Aswanth & Geethanjali",
     date: "Wednesday, 11th November 2026",
     venue: "The Hill District Club, Kolagapara",
-    phone: "918848772371",
+    phone: "917356558475",
     theme: "ashwageetham",
     images: [
       "/ashwageetham/theme_card.jpg"
