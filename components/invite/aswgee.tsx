@@ -748,34 +748,42 @@ export function AswgeeTheme({ invite }: { invite?: InviteData }) {
                   </button>
                 </div>
 
-                {/* Royal Gold Filigree Frame */}
-                <div className="w-full aspect-[9/12] rounded-2xl overflow-hidden bg-[#ECE4D5] shadow-[0_20px_50px_rgba(44,37,32,0.25)] relative border-2 border-[#D4AF37]/70 group">
+                {/* Royal Borderless Feathered Artwork Showcase */}
+                <div
+                  className="w-full aspect-[744/1180] relative flex items-center justify-center select-none group my-2"
+                  style={{
+                    maskImage:
+                      "radial-gradient(ellipse 90% 88% at 50% 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)",
+                    WebkitMaskImage:
+                      "radial-gradient(ellipse 90% 88% at 50% 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)",
+                  }}
+                >
                   {leftArtwork === "portrait" ? (
-                    <>
+                    <div className="w-full h-full flex flex-col items-center justify-center relative">
                       <img
-                        src="/ashwageetham/aswanth_geethanjali_sketch.jpg"
+                        src="/ashwageetham/aswanth_geethanjali_sketch_feathered.png"
                         alt="Wedding Portrait of Aswanth and Geethanjali"
-                        className="w-full h-full object-cover object-top filter contrast-[1.03] brightness-[1.01] group-hover:scale-105 transition-transform duration-1000 ease-out"
+                        className="w-full h-full object-contain filter contrast-[1.02] brightness-[1.01] group-hover:scale-105 transition-transform duration-1000 ease-out"
                       />
-                      <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#27150C]/80 via-[#27150C]/30 to-transparent flex items-end justify-center pb-4">
-                        <p className="font-['Alex_Brush'] text-3xl xl:text-4xl text-[#FAF6EE] drop-shadow-md">
+                      <div className="absolute inset-x-0 bottom-2 flex flex-col items-center justify-center pointer-events-none">
+                        <p className="font-['Alex_Brush'] text-3xl xl:text-4xl text-[#3D2516] drop-shadow-sm">
                           Aswanth & Geethanjali
                         </p>
                       </div>
-                    </>
+                    </div>
                   ) : (
-                    <>
+                    <div className="w-full h-full flex flex-col items-center justify-center relative">
                       <img
-                        src="/ashwageetham/adiyogi_sketch.jpg"
+                        src="/ashwageetham/adiyogi_sketch_feathered.png"
                         alt="Aswanth & Geethanjali before Adiyogi Shiva"
-                        className="w-full h-full object-cover object-top filter contrast-[1.03] brightness-[1.01] group-hover:scale-105 transition-transform duration-1000 ease-out"
+                        className="w-full h-full object-contain filter contrast-[1.02] brightness-[1.01] group-hover:scale-105 transition-transform duration-1000 ease-out"
                       />
-                      <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#27150C]/80 via-[#27150C]/30 to-transparent flex items-end justify-center pb-4">
-                        <p className="font-['Cormorant_Garamond'] italic font-semibold text-xl xl:text-2xl text-[#FAF6EE] drop-shadow-md">
+                      <div className="absolute inset-x-0 bottom-2 flex flex-col items-center justify-center pointer-events-none">
+                        <p className="font-['Cormorant_Garamond'] italic font-semibold text-xl xl:text-2xl text-[#3D2516] drop-shadow-md">
                           Under Adiyogi&apos;s Grace
                         </p>
                       </div>
-                    </>
+                    </div>
                   )}
                 </div>
               </div>
@@ -819,14 +827,21 @@ export function AswgeeTheme({ invite }: { invite?: InviteData }) {
                     </div>
                   </div>
 
-                  {/* Couple Pencil Sketch Portrait Hero Card */}
-                  <div className="w-full rounded-2xl overflow-hidden bg-[#ECE4D5] border border-[#D4AF37]/60 shadow-[0_15px_45px_rgba(40,25,12,0.18)] aspect-[9/12] max-h-[500px] relative">
+                  {/* Couple Pencil Sketch Portrait - Seamless & Borderless Feathered */}
+                  <div
+                    className="relative w-full max-w-[340px] sm:max-w-[370px] aspect-[744/1250] max-h-[480px] my-3 mx-auto select-none flex items-center justify-center"
+                    style={{
+                      maskImage:
+                        "radial-gradient(ellipse 90% 88% at 50% 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)",
+                      WebkitMaskImage:
+                        "radial-gradient(ellipse 90% 88% at 50% 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)",
+                    }}
+                  >
                     <img
-                      src="/ashwageetham/aswanth_geethanjali_sketch.jpg"
+                      src="/ashwageetham/aswanth_geethanjali_sketch_feathered.png"
                       alt="Wedding Portrait of Aswanth and Geethanjali"
-                      className="w-full h-full object-cover object-top filter contrast-[1.03] brightness-[1.01]"
+                      className="w-full h-full object-contain filter contrast-[1.02] brightness-[1.01]"
                     />
-                    <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#FFFDF9] via-[#FFFDF9]/80 to-transparent" />
                   </div>
                 </div>
 

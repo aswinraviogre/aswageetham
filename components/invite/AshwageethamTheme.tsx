@@ -412,7 +412,7 @@ export function AshwageethamTheme({ invite }: { invite: InviteData }) {
     setBlessingCount(updatedCount);
     try {
       localStorage.setItem("ashwageetham_count_v4", updatedCount.toString());
-    } catch (e) {}
+    } catch (e) { }
     showToast("🌸 May your blessings shower eternal grace upon Aswanth & Geethanjali!");
   };
 
@@ -439,7 +439,7 @@ export function AshwageethamTheme({ invite }: { invite: InviteData }) {
 
     try {
       localStorage.setItem("ashwageetham_wishes_v4", JSON.stringify(updated));
-    } catch (e) {}
+    } catch (e) { }
 
     showToast("✨ Your loving blessing has been posted to the guestbook!");
     setTimeout(() => setSubmitted(false), 4000);
@@ -503,7 +503,13 @@ export function AshwageethamTheme({ invite }: { invite: InviteData }) {
   const handleWhatsappShare = (e: React.MouseEvent) => {
     e.preventDefault();
     const url = typeof window !== "undefined" ? window.location.href : "";
-    const shareMessage = `Together with our families, we cordially invite you to celebrate our special day on Wednesday, 11th November 2026. View our interactive wedding invitation card here: ${url}`;
+    const shareMessage = `👋 Hello!
+
+❤️ You're warmly invited to celebrate our special day.
+
+Tap the link below to view our digital invitation.
+
+⬇️: ${url}`;
     const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareMessage)}`;
     window.open(whatsappUrl, "_blank");
   };
@@ -698,9 +704,8 @@ export function AshwageethamTheme({ invite }: { invite: InviteData }) {
       {/* ========================================================================= */}
       {!isFullyRevealed && (
         <div
-          className={`fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-[#1E0408]/90 backdrop-blur-md overflow-y-auto transition-all duration-1000 ${
-            isOpened ? "opacity-0 pointer-events-none scale-105" : "opacity-100 scale-100"
-          }`}
+          className={`fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-[#1E0408]/90 backdrop-blur-md overflow-y-auto transition-all duration-1000 ${isOpened ? "opacity-0 pointer-events-none scale-105" : "opacity-100 scale-100"
+            }`}
           style={{
             backgroundImage: `radial-gradient(circle at center, #3F0A13 0%, #150205 100%)`,
           }}
@@ -1058,7 +1063,7 @@ export function AshwageethamTheme({ invite }: { invite: InviteData }) {
 
                 {/* Dual Photo Showcase Grid */}
                 <div className="w-full max-w-[640px] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6 px-2">
-                  
+
                   {/* Photo 1: Together in Love */}
                   <div
                     onClick={() => setSelectedPhoto({
