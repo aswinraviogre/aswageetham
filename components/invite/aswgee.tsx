@@ -718,30 +718,30 @@ export function AswgeeTheme({ invite }: { invite?: InviteData }) {
               </div>
 
               {/* Top: Chariot & Royal Procession Artwork with Soft Vignette */}
-              <div className="relative z-10 w-full flex flex-col items-center pt-8 pb-12 px-8 bg-gradient-to-b from-[#FAF6EE]/95 via-[#FAF6EE]/60 to-transparent pointer-events-none">
+              <div className="relative z-10 w-full flex flex-col items-center pt-6 pb-8 px-6 bg-gradient-to-b from-[#FAF6EE]/95 via-[#FAF6EE]/60 to-transparent pointer-events-none">
                 <img
                   src="/ashwageetham/chariot_procession.png"
                   alt="Royal Wedding Procession"
-                  className="w-full max-w-[320px] xl:max-w-[360px] object-contain drop-shadow-sm filter contrast-[1.03] transition-transform duration-700 hover:scale-105 pointer-events-auto"
+                  className="w-full max-w-[300px] xl:max-w-[340px] object-contain drop-shadow-sm filter contrast-[1.03] transition-transform duration-700 hover:scale-105 pointer-events-auto"
                 />
 
                 {/* Stylized "ashwageetham" calligraphy */}
-                <div className="my-2 flex flex-col items-center pointer-events-auto">
+                <div className="my-1.5 flex flex-col items-center pointer-events-auto">
                   <img
                     src="/ashwageetham/ashwageetham_title.png"
                     alt="Ashwageetham"
-                    className="h-8 xl:h-10 object-contain drop-shadow-[0_2px_10px_rgba(122,28,46,0.22)]"
+                    className="h-7 xl:h-9 object-contain drop-shadow-[0_2px_10px_rgba(122,28,46,0.22)]"
                   />
-                  <span className="font-['Cinzel'] tracking-[0.4em] text-[#7C1425] text-xs font-bold uppercase mt-1">
+                  <span className="font-['Cinzel'] tracking-[0.4em] text-[#7C1425] text-[10px] xl:text-xs font-bold uppercase mt-1">
                     11 . 11 . 2026
                   </span>
                 </div>
               </div>
 
               {/* Bottom: Switcher Pills, Couple Names & Traditional Border */}
-              <div className="relative z-10 w-full flex flex-col items-center pt-16 pb-4 px-6 bg-gradient-to-t from-[#201007]/90 via-[#201007]/50 to-transparent">
+              <div className="relative z-10 w-full flex flex-col items-center pt-10 pb-4 px-6 bg-gradient-to-t from-[#201007]/90 via-[#201007]/45 to-transparent">
                 {/* Switcher Pills */}
-                <div className="flex items-center gap-1.5 p-1 rounded-full bg-[#FAF6EE]/90 backdrop-blur-md border border-[#D4AF37]/60 mb-2.5 shadow-md">
+                <div className="flex items-center gap-1.5 p-1 rounded-full bg-[#FAF6EE]/90 backdrop-blur-md border border-[#D4AF37]/60 mb-2 shadow-md">
                   <button
                     type="button"
                     onClick={() => setLeftArtwork("portrait")}
@@ -767,21 +767,21 @@ export function AswgeeTheme({ invite }: { invite?: InviteData }) {
                 </div>
 
                 {leftArtwork === "portrait" ? (
-                  <p className="font-['Alex_Brush'] text-3xl xl:text-4xl text-[#FAF6EE] drop-shadow-md mb-2">
+                  <p className="font-['Alex_Brush'] text-3xl xl:text-4xl text-[#FAF6EE] drop-shadow-md mb-1.5">
                     Aswanth & Geethanjali
                   </p>
                 ) : (
-                  <p className="font-['Cormorant_Garamond'] italic font-semibold text-xl xl:text-2xl text-[#FAF6EE] drop-shadow-md mb-2">
+                  <p className="font-['Cormorant_Garamond'] italic font-semibold text-xl xl:text-2xl text-[#FAF6EE] drop-shadow-md mb-1.5">
                     Under Adiyogi&apos;s Grace
                   </p>
                 )}
 
                 {/* Bottom: Traditional Floral Border Banner */}
-                <div className="w-full max-w-[380px] pt-1">
+                <div className="w-full max-w-[360px] pt-1">
                   <img
                     src="/ashwageetham/ashwageetham_border.png"
                     alt="Traditional Floral Border"
-                    className="w-full h-8 object-cover rounded shadow-sm border border-[#D4AF37]/50"
+                    className="w-full h-7 object-cover rounded shadow-sm border border-[#D4AF37]/50"
                   />
                 </div>
               </div>
@@ -793,41 +793,44 @@ export function AswgeeTheme({ invite }: { invite?: InviteData }) {
             <main className="w-full lg:w-[52%] xl:w-[55%] min-h-screen lg:overflow-y-auto px-4 sm:px-8 lg:px-12 pt-16 sm:pt-20 pb-16 flex flex-col items-center bg-[#FFFDF9] relative">
               <article className="w-full max-w-[520px] mx-auto flex flex-col items-center text-center">
 
-                {/* MOBILE HERO: ARTWORK & COUPLE SKETCH (FULL SCREEN FILL) */}
-                <div className="block lg:hidden w-[calc(100%+2rem)] sm:w-[calc(100%+4rem)] -mx-4 sm:-mx-8 relative overflow-hidden min-h-[85vh] sm:min-h-[90vh] flex flex-col justify-between select-none mb-8">
-                  {/* Full-bleed background image filling mobile screen */}
-                  <img
-                    src="/ashwageetham/aswanth_geethanjali_sketch_feathered.png"
-                    alt="Wedding Portrait of Aswanth and Geethanjali"
-                    className="absolute inset-0 w-full h-full object-cover object-top filter contrast-[1.03] brightness-[1.01]"
-                  />
-
-                  {/* Top Overlay: Procession, Calligraphy & Date */}
-                  <div className="relative z-10 pt-5 pb-12 px-4 bg-gradient-to-b from-[#FFFDF9] via-[#FFFDF9]/80 to-transparent flex flex-col items-center">
+                {/* MOBILE HERO: ARTWORK & COUPLE SKETCH (VISIBLE ON MOBILE & TABLET ONLY) */}
+                <div className="block lg:hidden w-full mb-6 flex flex-col items-center">
+                  {/* 1. Chariot Procession Artwork */}
+                  <div className="w-full flex flex-col items-center pt-2 pb-3">
                     <img
                       src="/ashwageetham/chariot_procession.png"
                       alt="Royal Wedding Procession"
-                      className="w-full max-w-[320px] sm:max-w-[360px] object-contain drop-shadow-sm filter contrast-[1.03]"
+                      className="w-full max-w-[340px] sm:max-w-[380px] object-contain drop-shadow-sm filter contrast-[1.03]"
                     />
 
-                    <div className="my-2 flex flex-col items-center">
+                    {/* Stylized "ashwageetham" calligraphy & date */}
+                    <div className="my-2.5 flex flex-col items-center">
                       <img
                         src="/ashwageetham/ashwageetham_title.png"
                         alt="Ashwageetham"
                         className="h-8 sm:h-9 object-contain drop-shadow-[0_2px_8px_rgba(122,28,46,0.2)]"
                       />
-                      <span className="font-['Cinzel'] tracking-[0.38em] text-[#7C1425] text-[11px] sm:text-xs font-bold uppercase mt-1">
+                      <span className="font-['Cinzel'] tracking-[0.38em] text-[#7C1425] text-[11px] sm:text-xs font-bold uppercase mt-1.5">
                         11 . 11 . 2026
                       </span>
                     </div>
                   </div>
 
-                  {/* Bottom Overlay: Seamless feather fade into the content below */}
-                  <div className="relative z-10 pt-20 pb-6 px-4 bg-gradient-to-t from-[#FFFDF9] via-[#FFFDF9]/90 to-transparent flex flex-col items-center">
-                    <p className="font-['Alex_Brush'] text-4xl sm:text-5xl text-[#3D2516] drop-shadow-sm mb-1">
-                      Aswanth & Geethanjali
-                    </p>
-                    <div className="w-16 h-[1.2px] bg-gradient-to-r from-transparent via-[#C5A059] to-transparent my-1" />
+                  {/* 2. Wedding Portrait - Clean, Full-Width & Seamlessly Feathered (Zero Overlap) */}
+                  <div
+                    className="w-full max-w-[420px] sm:max-w-[460px] aspect-[744/1200] relative mx-auto my-2 select-none flex items-center justify-center overflow-hidden"
+                    style={{
+                      maskImage:
+                        "radial-gradient(ellipse 92% 90% at 50% 50%, rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%)",
+                      WebkitMaskImage:
+                        "radial-gradient(ellipse 92% 90% at 50% 50%, rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%)",
+                    }}
+                  >
+                    <img
+                      src="/ashwageetham/aswanth_geethanjali_sketch_feathered.png"
+                      alt="Wedding Portrait of Aswanth and Geethanjali"
+                      className="w-full h-full object-cover object-top filter contrast-[1.03] brightness-[1.01]"
+                    />
                   </div>
                 </div>
 
