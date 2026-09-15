@@ -4,6 +4,15 @@ import Image from "next/image";
 export default function DemoPage() {
   const demos = [
     {
+      title: "Ashwageetham Royal Kerala",
+      couple: "Aswanth & Geethanjali",
+      slug: "aswanth-geethanjali-wedding-digital-invitation",
+      desc: "Ivory and imperial burgundy theme with traditional royal chariot & elephant procession, 3D wax seal envelope, live countdown, and continuous wedding BGM.",
+      image: "/ashwageetham/theme_card.jpg",
+      bgClass: "border-amber-500/30 bg-[#250810]/95",
+      tagColor: "bg-amber-500/20 text-amber-200 border border-amber-500/30"
+    },
+    {
       title: "Kerala Traditional",
       couple: "Anandhu & Archana",
       slug: "anandhu-archana-kerala-wedding",

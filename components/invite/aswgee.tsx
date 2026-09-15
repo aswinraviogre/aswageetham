@@ -84,7 +84,7 @@ interface PetalParticle {
 // ---------------------------------------------------------------------------
 // 4. MAIN COMPONENT: ASWGEE RESPONSIVE SCREEN-FITTED THEME
 // ---------------------------------------------------------------------------
-export function AswgeeTheme({ invite }: { invite: InviteData }) {
+export function AswgeeTheme({ invite }: { invite?: InviteData }) {
   // Animation phases: "idle" | "pressing" | "unsealing" | "unfolding" | "sliding" | "revealing" | "revealed"
   const [phase, setPhase] = useState<
     "idle" | "pressing" | "unsealing" | "unfolding" | "sliding" | "revealing" | "revealed"
@@ -254,7 +254,7 @@ export function AswgeeTheme({ invite }: { invite: InviteData }) {
 
   // WhatsApp RSVP link directly to family
   const getWhatsAppRsvpUrl = () => {
-    const phone = invite.phone || "918848772371";
+    const phone = invite?.phone || "918848772371";
     const msg = encodeURIComponent(
       "Namaste! 🙏\n\nWe are delighted to receive the wedding invitation of ASWANTH & GEETHANJALI on Wednesday, 11th November 2026 at The Hill District Club, Kolagapara.\n\nWe will be honored to attend and offer our blessings to the couple! 🌸"
     );
@@ -631,7 +631,7 @@ export function AswgeeTheme({ invite }: { invite: InviteData }) {
           <header className="fixed top-3 inset-x-0 z-40 px-3 sm:px-6 flex items-center justify-between pointer-events-none max-w-7xl mx-auto w-full">
             <div className="flex items-center gap-2 pointer-events-auto">
               <Link
-                href="/"
+                href="/demo"
                 className="bg-[#FAF5EA]/90 backdrop-blur-md text-[#580F1E] px-3.5 py-1.5 rounded-full flex items-center gap-1.5 hover:bg-[#FAF5EA] transition-all border border-[#D4AF37]/40 text-xs shadow-md group hover:scale-105"
               >
                 <span className="material-symbols-outlined text-[16px] group-hover:-translate-x-0.5 transition-transform">
